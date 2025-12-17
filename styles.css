@@ -709,3 +709,15 @@ footer {
     .paper-details { grid-template-columns: 1fr; }
     .paper-top { flex-direction: column; align-items: flex-start; }
 }
+
+/* Fix overflow link lunghi (mobile) */
+.pub-meta a,
+.pub-doi a {
+    overflow-wrap: anywhere;   /* migliore: spezza ovunque se serve */
+    word-break: break-word;    /* fallback */
+}
+
+.pub-meta,
+.pub-doi {
+    min-width: 0;              /* evita overflow in alcuni layout */
+}
