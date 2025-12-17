@@ -153,8 +153,7 @@
                 </div>
 
                 <div id="abs-iatl" class="pub-panel" hidden>
-                    <p class="pub-abstract">
-                        Multi-Agent Systems (MAS) are essential for modelling strategic interactions between multiple agents, often involving partial information...
+                    <p class="pub-abstract">Multi-Agent Systems (MAS) are essential for modelling strategic interactions between multiple agents, often involving partial information. Managing this partial information is crucial for accurate decision-making and strategy optimization. However, partial information combined with perfect recall strategies renders verifying strategic properties undecidable. Intuitionism, a form of partial information which has not yet been explored in the context of MAS, introduces a novel perspective. In this paper, we propose Intuitionistic Alternating Time Temporal Logic (IATL), an extension of ATL that incorporates intuitionistic logic, providing a specialized representation of imperfect information. We define its syntax, semantics, and key structural properties. Additionally, we propose a PTIME-complete algorithm for IATL model checking, supported by benchmarks demonstrating its efficiency.
                     </p>
                 </div>
 
@@ -205,7 +204,9 @@
 
                 <div id="abs-ictl" class="pub-panel" hidden>
                     <p class="pub-abstract">
-                        Model checking plays a central role in the formal verification of dynamic systems...
+                        Model checking plays a central role in the formal verification of dynamic systems. However, classical temporal logics such as CTL assume a complete and absolute perspective on truth, which limits their expressiveness in contexts where partial information and constructivity are essential. In this paper, we propose Intuitionistic Computation Tree Logic (ICTL), a novel temporal logic that integrates the semantics of CTL with the constructive principles of intuitionistic logic. ICTL adopts a birelational semantic framework %, allowing explicit %distinction between existential and universal path quantification,
+                        which models the interaction between temporal evolution and the growth of knowledge over time.
+                        We formally define the syntax and semantics of ICTL, analyze its foundational properties, and show that key fixed-point characterizations of classical CTL hold in this setting. We then present an efficient model checking algorithm for the novel logic, maintaining the same PTIME complexity of classical CTL. ICTL is particularly well-suited for verifying properties in systems where traceability, information growth, and constructive reasoning are crucial, such as medical monitoring, geophysical data analysis, and database auditing. We validate our theoretical contributions through the extension of VITAMIN, a verification tool for Multi-Agent Systems, to support ICTL. Benchmarks confirm the practical tractability of ICTL model checking, reinforcing its potential for constructive temporal verification in real-world settings.
                     </p>
                 </div>
 
@@ -246,7 +247,10 @@
 
                 <div id="abs-thesis-ictl" class="pub-panel" hidden>
                     <p class="pub-abstract">
-                        My thesis presents an intuitionistic version of Computation Tree Logic (CTL), known as ICTL...
+                        My thesis presents an intuitionistic version of Computation Tree Logic (CTL), known as Intuitionistic Computation Tree Logic (ICTL). I focused my efforts on the development and understanding of ICTL, which merges intuitionistic logic with CTL. A distinctive feature of ICTL is its birelational models and syntax that clearly distinguishes between existential and universal quantifications.
+                        In my research, I outlined the syntax and semantics of ICTL, examined the properties of birelational models, and verified the satisfiability of ICTL formulas. I explored the differences between CTL and ICTL, particularly the validity of fixed-point equivalences, introducing a new version of ICTL with an additional condition on the models to overcome limitations of the original proposal. I developed an efficient model checking algorithm for this new version of ICTL, highlighting its computational complexity and practical applications in constructively verifying system properties.
+                        In my thesis, I emphasized the importance of ICTL in verifying properties across various contexts, including open systems, and highlighted its potential for addressing more complex verification tasks compared to classical CTL. I discussed ICTL's application in different scenarios such as medical monitoring, database management, and agricultural land monitoring, emphasizing its ability to ensure persistent knowledge and information traceability over time.
+                        Finally, I presented an extension of VITAMIN, a prototype designed for formal verification of Multi-Agent Systems (MAS), highlighting its modularity, versatility, and ease of extension to accommodate various logics and models in property verification. I provided benchmarks to demonstrate the efficiency of the ICTL model checking process in VITAMIN. I hope that my thesis can contribute to the existing literature on CTL and stimulate further research in this field.
                     </p>
                 </div>
 
