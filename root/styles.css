@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f7;
+    color: #111827;
+}
+
+/* LAYOUT GENERALE SEZIONI */
+.section {
+    width: 100%;
+    padding: 3rem 1rem;
+}
+
+.section-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2.5rem 2.25rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+/* HEADER */
+header {
+    background: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.45);
+    padding: 0.65rem 1.25rem;
+}
+
+.navbar-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #e5e7eb;
+    letter-spacing: 0.04em;
+}
+
+/* Pulsante hamburger */
+.menu-toggle {
+    background: none;
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    padding: 0.35rem 0.6rem;
+    border-radius: 999px;
+    color: #e5e7eb;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Menu desktop */
+.desktop-menu {
+    display: flex;
+}
+
+.desktop-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.desktop-menu ul li a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.4rem 0;
+    transition: color 0.2s ease;
+    position: relative;
+}
+
+.desktop-menu ul li a:hover {
+    color: #38bdf8;
+}
+
+.desktop-menu ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -0.3rem;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #22c55e, #06b6d4);
+    transition: width 0.2s ease, transform 0.2s ease;
+    transform: translateX(-50%);
+}
+
+.desktop-menu ul li a:hover::after {
+    width: 100%;
+}
+
+/* SIDEBAR mobile */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 260px;
+    height: 100%;
+    background: #020617;
+    padding: 2rem 1.5rem;
+    transition: right 0.3s ease;
+    z-index: 1100;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar .close-sidebar {
+    background: none;
+    border: none;
+    color: #e5e7eb;
+    font-size: 1.6rem;
+    align-self: flex-end;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 1rem 0;
+}
+
+.sidebar ul li a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #38bdf8;
+}
+
+/* Overlay quando la sidebar è attiva */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.45);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1050;
+}
+
+.sidebar-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Mostra hamburger su mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .desktop-menu {
+        display: none;
+    }
+}
+
+/* TITOLI SEZIONE */
+section h2 {
+    color: #0f172a;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.75rem;
+    font-size: 1.8rem;
+    font-weight: 650;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* ABOUT / HERO */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.profile-image {
+    flex: 0 0 190px;
+    text-align: center;
+}
+
+.profile-image img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid #0f172a;
+    object-fit: cover;
+    box-shadow: 0 14px 35px rgba(15, 23, 42, 0.35);
+}
+
+.about-text {
+    flex: 1;
+    min-width: 260px;
+}
+
+.name-title {
+    font-size: 2.1rem;
+    margin: 0;
+    color: #0f172a;
+}
+
+.subtitle {
+    margin: 0.4rem 0 0.6rem;
+    font-size: 1rem;
+    color: #4b5563;
+}
+
+.subtitle .affiliation {
+    color: #111827;
+    font-weight: 500;
+}
+
+.research-keywords {
+    margin: 0.8rem 0 1.3rem;
+    font-size: 0.95rem;
+    color: #0f766e;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary,
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.55rem 1rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #0f766e, #0ea5e9);
+    color: #ecfeff;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 25px rgba(15, 118, 110, 0.45);
+}
+
+.btn-outline {
+    background: #f9fafb;
+    color: #0f172a;
+    border-color: #cbd5f5;
+}
+
+.btn-outline:hover {
+    background: #e5e7eb;
+    transform: translateY(-1px);
+}
+
+.about-separator {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 1.5rem 0 1.25rem;
+}
+
+.about-text p {
+    margin-bottom: 0.9rem;
+    text-align: justify;
+}
+
+.about-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.2rem;
+}
+
+.about-columns h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+    color: #111827;
+}
+
+.about-columns ul {
+    margin: 0;
+    padding-left: 1.1rem;
+    font-size: 0.95rem;
+}
+
+/* PUBLICATIONS */
+.pub-list {
+    list-style: decimal;
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.publication {
+    margin-bottom: 1.75rem;
+    padding: 1rem 1.1rem;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    background-color: #f9fafb;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.publication:hover {
+    box-shadow: 0 14px 35px rgba(15, 23, 42, 0.12);
+    transform: translateY(-2px);
+    border-color: #cbd5f5;
+}
+
+.pub-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.pub-year {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #0369a1;
+    background: #e0f2fe;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+}
+
+.publication h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    color: #0f172a;
+}
+
+.pub-meta {
+    margin: 0.35rem 0;
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.pub-abstract {
+    margin: 0.35rem 0;
+    font-size: 0.92rem;
+}
+
+.pub-links {
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.pub-links a {
+    text-decoration: none;
+    color: #0369a1;
+    font-weight: 500;
+}
+
+.pub-links a:hover {
+    text-decoration: underline;
+}
+
+/* PROJECTS, EXPERIENCES (riuso card style) */
+.project,
+.experience {
+    margin-bottom: 1.5rem;
+    padding: 1.1rem 1.2rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background-color: #f9fafb;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project:hover,
+.experience:hover {
+    box-shadow: 0 14px 35px rgba(15, 23, 42, 0.12);
+    transform: translateY(-2px);
+    border-color: #cbd5f5;
+}
+
+.project h3,
+.experience h3 {
+    margin-top: 0;
+    margin-bottom: 0.35rem;
+    color: #0f172a;
+    font-size: 1.05rem;
+}
+
+.project p,
+.experience p {
+    margin: 0.35rem 0;
+    font-size: 0.94rem;
+}
+
+/* SKILLS */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.75rem;
+}
+
+.hard-skills,
+.soft-skills {
+    flex: 1 1 280px;
+    min-width: 260px;
+    background-color: #f9fafb;
+    border-radius: 10px;
+    padding: 1.5rem 1.4rem;
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+}
+
+.hard-skills h3,
+.soft-skills h3 {
+    margin-bottom: 0.9rem;
+    color: #0f172a;
+    font-size: 1.02rem;
+}
+
+.skills-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.6rem;
+    font-size: 0.93rem;
+    color: #111827;
+}
+
+.skills-list li i {
+    margin-right: 0.6rem;
+    font-size: 1.05rem;
+    color: #0f172a;
+}
+
+/* CONTACTS */
+.contact-methods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    justify-content: center;
+}
+
+.contact-item a {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    background-color: #f9fafb;
+    padding: 0.7rem 1rem;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #0f172a;
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+    font-size: 0.9rem;
+}
+
+.contact-item a:hover {
+    background-color: #e5e7eb;
+    transform: translateY(-1px);
+    box-shadow: 0 14px 35px rgba(15, 23, 42, 0.12);
+}
+
+.contact-item i {
+    font-size: 1.1rem;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1rem 0 1.5rem;
+    background: #020617;
+    color: #9ca3af;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .section-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-columns {
+        flex-direction: column;
+    }
+
+    .name-title {
+        text-align: center;
+    }
+
+    .subtitle,
+    .research-keywords {
+        text-align: center;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+}
+
+#conferences .experience h3 {
+    margin-bottom: 0.25rem;
+}
+
+#conferences .experience h3 a {
+    text-decoration: none;
+    color: #0f172a;
+    font-weight: 600;
+}
+
+#conferences .experience h3 a:hover {
+    color: #0369a1;
+}
+
+#conferences .experience h3 i {
+    font-size: 0.85rem;
+    margin-left: 0.35rem;
+    opacity: 0.8;
+}
+
+
+.pub-sep {
+  margin: 0 0.35rem;
+  color: #94a3b8;
+}

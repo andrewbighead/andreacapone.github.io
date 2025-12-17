@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Capone - Personal Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="navbar-container">
+        <div class="logo">Andrea Capone</div>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="desktop-menu">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#conferences">Attended Conferences</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experiences</a></li>
+                <li><a href="#skills">Research Interests & Skills</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Sidebar mobile -->
+<aside class="sidebar" aria-hidden="true">
+    <button class="close-sidebar" aria-label="Close navigation">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+    <ul>
+        <li><a href="#about" class="sidebar-link">About</a></li>
+        <li><a href="#publications" class="sidebar-link">Publications</a></li>
+        <li><a href="#conferences" class="sidebar-link">Attended Conferences</a></li>
+        <li><a href="#projects" class="sidebar-link">Projects</a></li>
+        <li><a href="#experience" class="sidebar-link">Experiences</a></li>
+        <li><a href="#skills" class="sidebar-link">Research Interests & Skills</a></li>
+        <li><a href="#contact" class="sidebar-link">Contacts</a></li>
+    </ul>
+</aside>
+
+<!-- Overlay per sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- ABOUT / HERO -->
+<section id="about" class="section">
+    <div class="section-container about-container">
+        <div class="profile-image">
+            <img src="pic.jpg" alt="Profile Photo of Andrea Capone">
+        </div>
+
+        <div class="about-text">
+            <h1 class="name-title">Andrea Capone</h1>
+            <p class="subtitle">
+                PhD Student in Artificial Intelligence <br>
+                <span class="affiliation">University of Naples Federico II</span>
+            </p>
+
+            <p class="research-keywords">
+                Strategic Reasoning · Knowledge Representation · NeuroSymbolic AI ·
+                Explainable Artificial Intelligence · Time Series Analysis ·
+                Model Checking and Formal Verification
+            </p>
+
+            <div class="hero-actions">
+                <a href="cv.pdf" class="btn-primary" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-file-pdf"></i> Curriculum Vitae
+                </a>
+                <a href="https://orcid.org/0009-0002-7708-9261" class="btn-outline" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-orcid"></i> ORCID profile
+                </a>
+            </div>
+
+            <hr class="about-separator">
+
+            <p>
+                I am a PhD student in Artificial Intelligence at the University of Naples Federico II,
+                conducting my research within the <strong>ASTREA (Automated STRategic REAsoning)</strong> group,
+                <strong>DIST (Department of Science and Technology)</strong> department at University of Naples
+                Parthenope and the <strong>(INGV) National Institute of Geophysics and Volcanology</strong>
+                Research Institute.
+            </p>
+
+            <p>
+                My work aims to develop principled methods at the intersection of
+                <strong>NeuroSymbolic AI</strong>,
+                <strong>Knowledge Representation and Reasoning</strong>,
+                and <strong>Explainable Artificial Intelligence</strong>.
+                I focus on integrating symbolic models with data-driven approaches to support
+                transparent reasoning, verifiable decision-making, and interpretable AI systems.
+            </p>
+
+            <div class="about-columns">
+                <div>
+                    <h3>Research interests</h3>
+                    <ul>
+                        <li>Knowledge Representation</li>
+                        <li>Strategic Reasoning</li>
+                        <li>Model Checking and Formal Verification</li>
+                        <li>NeuroSymbolic AI</li>
+                        <li>Explainable Artificial Intelligence</li>
+                        <li>Time Series Analysis</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Current roles & collaborations</h3>
+                    <ul>
+                        <li>PhD Student, Artificial Intelligence, University of Naples Federico II</li>
+                        <li>Member of DIST Department (Prof. Angelo Ciaramella)</li>
+                        <li>Member of ASTREA research group (Prof. Nello Murano)</li>
+                        <li>Collaboration with INGV on Campi Flegrei bradyseism</li>
+                        <li>Collaboration with BIDATA SRL on APLAND Project</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications" class="section">
+    <div class="section-container">
+        <h2>Publications</h2>
+
+        <ol class="pub-list">
+            <!-- IATL – KR 2025 -->
+            <li class="publication">
+                <div class="pub-header">
+                    <span class="pub-year">2025</span>
+                    <h3>An Intuitionistic Version of Alternating Time-Temporal Logic</h3>
+                </div>
+                <p class="pub-meta">
+                    Main Track Conference Paper, <strong>KR 2025</strong>.
+                    <span class="pub-doi">DOI:
+                        <a href="https://proceedings.kr.org/2025/19/" target="_blank" rel="noopener noreferrer">
+                            https://proceedings.kr.org/2025/19/
+                        </a>
+                    </span>
+                </p>
+
+                <button type="button" class="toggle-abstract">Show abstract</button>
+
+                <p class="pub-abstract" style="display:none;">
+                    Multi-Agent Systems (MAS) are essential for modelling
+                    strategic interactions between multiple agents, often involv
+                    ing partial information. Managing this partial information is
+                    crucial for accurate decision-making and strategy optimiza
+                    tion. However, partial information combined with perfect
+                    recall strategies renders verifying strategic properties unde
+                    cidable. Intuitionism, a form of partial information which
+                    has not yet been explored in the context of MAS, introduces
+                    a novel perspective. In this paper, we propose Intuitionis
+                    tic Alternating Time Temporal Logic (IATL), an extension
+                    of ATL that incorporates intuitionistic logic, providing a spe
+                    cialized representation of imperfect information. We define
+                    its syntax, semantics, and key structural properties. Addi
+                    tionally, we propose a PTIME-complete algorithm for IATL
+                    model checking, supported by benchmarks demonstrating its
+                    efficiency.
+                </p>
+                <p class="pub-links">
+                  <a href="papers/iatl.html">
+                    <i class="fa-solid fa-file-lines"></i> Paper page
+                  </a>
+                  <span class="pub-sep">·</span>
+                  <a href="papers/IATL_KR_Camera_Ready.pdf" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-file-pdf"></i> Download PDF
+                  </a>
+                </p>
+
+            </li>
+
+            <!-- ICTL – EUMAS 2025 -->
+            <li class="publication">
+                <div class="pub-header">
+                    <span class="pub-year">2025</span>
+                    <h3>An Intuitionistic Version of Computation Tree Logic</h3>
+                </div>
+                <p class="pub-meta">
+                    Main Track Conference Paper, <strong>EUMAS 2025</strong>.
+                    <span class="pub-doi">DOI:
+                        <a href="#" target="_blank" rel="noopener noreferrer">TBA</a>
+                    </span>
+                </p>
+
+                <button type="button" class="toggle-abstract">Show abstract</button>
+
+                <p class="pub-abstract" style="display:none;">
+                    Model checking plays a central role in the formal verification
+                    of dynamic systems. However, classical temporal logics such as CTL as
+                    sume a complete and absolute perspective on truth, which limits their
+                    expressiveness in contexts where partial information and constructivity
+                    are essential. In this paper, we propose Intuitionistic Computation Tree
+                    Logic (ICTL), a novel temporal logic that integrates the semantics of
+                    CTL with the constructive principles of intuitionistic logic. ICTL adopts
+                    a birelational semantic framework which models the interaction between
+                    temporal evolution and the growth of knowledge over time. We formally
+                    define the syntax and semantics of ICTL, analyze its foundational prop
+                    erties, and show that key fixed-point characterizations of classical CTL
+                    hold in this setting. We then present an efficient model checking algo
+                    rithm for the novel logic, maintaining the same PTIME complexity of
+                    classical CTL. ICTL is particularly well-suited for verifying properties in
+                    systems where traceability, information growth, and constructive reason
+                    ing are crucial, such as medical monitoring, geophysical data analysis,
+                    and database auditing. We validate our theoretical contributions through
+                    the extension of VITAMIN, a verification tool for Multi-Agent Systems,
+                    to support ICTL. Benchmarks confirm the practical tractability of ICTL
+                    model checking, reinforcing its potential for constructive temporal verification
+                    in real-world settings.
+                </p>
+                <p class="pub-links">
+                  <a href="papers/ictl.html">
+                    <i class="fa-solid fa-file-lines"></i> Paper page
+                  </a>
+                  <span class="pub-sep">·</span>
+                  <a href="papers/ICTL_EUMAS_Camera_Ready.pdf" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-file-pdf"></i> Download PDF
+                  </a>
+                </p>
+            </li>
+
+            <!-- ICTL thesis -->
+            <li class="publication">
+                <div class="pub-header">
+                    <span class="pub-year">2024</span>
+                    <h3>An Intuitionistic Version of Computation Tree Logic</h3>
+                </div>
+                <p class="pub-meta">
+                    Master’s thesis, University of Naples Federico II.
+                </p>
+
+                <button type="button" class="toggle-abstract">Show abstract</button>
+
+                <p class="pub-abstract" style="display:none;">
+                    Mythesis presents an intuitionistic version of Computation Tree Logic (CTL), known as
+                    Intuitionistic Computation Tree Logic (ICTL). I focused my efforts on the development
+                    and understanding of ICTL, which merges intuitionistic logic with CTL. A distinctive
+                    feature of ICTL is its birelational models and syntax that clearly distinguishes between
+                    existential and universal quantifications.
+                    In my research, I outlined the syntax and semantics of ICTL, examined the properties
+                    of birelational models, and verified the satisfiability of ICTL formulas. I explored the
+                    differences between CTL and ICTL, particularly the validity of fixed-point equivalences,
+                    introducing a new version of ICTLwithanadditional condition on the models to overcome
+                    limitations of the original proposal. I developed an efficient model checking algorithm
+                    for this new version of ICTL, highlighting its computational complexity and practical
+                    applications in constructively verifying system properties.
+                    In my thesis, I emphasized the importance of ICTL in verifying properties across vari
+                    ous contexts, including open systems, and highlighted its potential for addressing more
+                    complex verification tasks compared to classical CTL. I discussed ICTL’s application in
+                    different scenarios such as medical monitoring, database management, and agricultural
+                    land monitoring, emphasizing its ability to ensure persistent knowledge and information
+                    traceability over time.
+                    Finally, I presented an extension of VITAMIN, a prototype designed for formal verifica
+                    tion of Multi-Agent Systems (MAS), highlighting its modularity, versatility, and ease of
+                    extension to accommodate various logics and models in property verification. I provided
+                    benchmarks to demonstrate the efficiency of the ICTL model checking process in VITA
+                    MIN. I hope that my thesis can contribute to the existing literature on CTL and stimulate
+                    further research in this field
+                </p>
+                <p class="pub-links">
+                    <a href="https://www.iris.unina.it/retrieve/00ddec36-c92a-4136-9f1c-cc395be94856/ICTL.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-file-pdf"></i> Download PDF
+                    </a>
+                </p>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<!-- ATTENDED CONFERENCES -->
+<section id="conferences" class="section">
+    <div class="section-container">
+        <h2>Attended Conferences</h2>
+
+        <div class="experience">
+            <h3>
+                <a href="https://kr.org/KR2025/" target="_blank" rel="noopener noreferrer">
+                    KR 2025 – 22nd International Conference on Principles of Knowledge Representation and Reasoning
+                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+            </h3>
+            <p><strong>Role:</strong> Presenter (Main Track Conference Paper: <em>An Intuitionistic Version of Alternating Time-Temporal Logic</em>)</p>
+            <p><strong>Location:</strong> Melbourne, Australia · <strong>Dates:</strong> 11–17 November 2025</p>
+        </div>
+
+        <div class="experience">
+            <h3>
+                <a href="https://euramas.github.io/eumas2025/" target="_blank" rel="noopener noreferrer">
+                    EUMAS 2025 – 22nd European Conference on Multi-Agent Systems
+                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+            </h3>
+            <p><strong>Role:</strong> Presenter (Main Track Conference Paper: <em>An Intuitionistic Version of Computation Tree Logic</em>)</p>
+            <p><strong>Location:</strong> Bucharest, Romania · <strong>Dates:</strong> 3–5 September 2025</p>
+        </div>
+
+        <div class="experience">
+            <h3>
+                <a href="https://csl2024.github.io/Home/" target="_blank" rel="noopener noreferrer">
+                    CSL 2024 – 32nd EACSL Annual Conference on Computer Science Logic
+                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+            </h3>
+            <p><strong>Role:</strong> Local organization support (University of Naples Federico II)</p>
+            <p><strong>Location:</strong> Naples, Italy · <strong>Dates:</strong> 19–23 February 2024</p>
+        </div>
+
+        <div class="experience">
+            <h3>
+                <a href="https://vadimmalvone.github.io/eumas2023/" target="_blank" rel="noopener noreferrer">
+                    EUMAS 2023 – 20th European Conference on Multi-Agent Systems
+                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+            </h3>
+            <p><strong>Role:</strong> Local organization support (University of Naples Federico II)</p>
+            <p><strong>Location:</strong> Naples, Italy · <strong>Dates:</strong> 13–15 September 2023</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <div class="section-container">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Towards Neurosymbolic AI for Risk Assessment of Bradyseism</h3>
+            <p><strong>Period:</strong> 2024 – 2028</p>
+            <p>
+                As part of my PhD research, I am working on the project <em>“Towards Neurosymbolic AI for Risk Assessment
+                in Geological Hazards”</em>, which focuses on predicting seismic events associated with
+                <strong>bradyseism</strong> in the <strong>Campi Flegrei</strong> area of Naples. In collaboration with the
+                <strong>Italian National Institute of Geophysics and Volcanology (INGV)</strong>, I am analyzing ground
+                deformation data from GNSS stations and progressively integrating additional risk factors such as
+                <strong>sinkholes</strong> and <strong>landslides</strong>. My research aims to advance
+                <strong>Explainable AI (XAI)</strong> methodologies, combining multimodal data analysis with
+                <strong>neurosymbolic approaches</strong> to extract formal rules that capture underlying geophysical
+                dynamics and support <strong>risk assessment</strong> and <strong>disaster response planning</strong>.
+            </p>
+            <p><strong>Technologies &amp; Skills:</strong> AI Modeling, Explainable AI, Multimodal Data Integration, Neuro-Symbolic Methods.</p>
+        </div>
+
+        <div class="project">
+            <h3>APLAND – AI for Landslide Susceptibility Mapping</h3>
+            <p><strong>Period:</strong> 2025 - 2026</p>
+            <p>
+                APLAND is an applied research initiative focused on developing AI-driven tools
+                for <strong>landslide susceptibility assessment</strong>. In collaboration with
+                <strong>BIDATA</strong>, I contributed to the modelling pipeline by designing and
+                implementing a data-driven workflow based on the
+                <strong>Frequency Ratio (FR)</strong> method for generating susceptibility maps.
+                The project integrates geospatial data, environmental conditioning factors, and
+                machine-learning components to support risk analysis and decision-making for
+                territorial monitoring and civil protection.
+            </p>
+            <p><strong>Technologies &amp; Skills:</strong> AI Modeling, Explainable AI,
+                Geospatial Data Analysis, Frequency Ratio Method, Multimodal Data Integration,
+                Neuro-Symbolic Methods.</p>
+        </div>
+
+        <div class="project">
+            <h3>VITAMIN – Model Checker</h3>
+            <p><strong>Period:</strong> 2024 – Ongoing</p>
+            <p>
+                Working with the ASTREA research team, I am involved in the engineering and development of VITAMIN,
+                a model checker designed for verifying complex systems. My focus is on optimizing the processing of
+                input data, refactoring and testing the code, and enhancing readability. I have also implemented model
+                checking for two new formalisms: Intuitionistic CTL and Intuitionistic ATL.
+            </p>
+            <p><strong>Technologies &amp; Skills:</strong> Python, Pandas, NumPy.</p>
+        </div>
+
+        <div class="project">
+            <h3>Food Talk</h3>
+            <p><strong>Period:</strong> 2023 – Ongoing</p>
+            <p>
+                As part of the Agritech Academy, I collaborated with a team to develop an application designed to
+                optimize the traceability of fresh produce from production to consumption. The system streamlines the
+                supply chain, offering real-time insights to improve quality control and enhance market transparency.
+            </p>
+            <p><strong>Technologies &amp; Skills:</strong> Mobile and Web Development, Data Integration, Process Optimization.</p>
+        </div>
+
+        <div class="project">
+            <h3>Wine – Digital Sommelier Assistant</h3>
+            <p><strong>Period:</strong> 2025 – Ongoing</p>
+            <p>
+                Wine is a mobile application designed for sommeliers to digitally compile tasting sheets for the Italian
+                Association of Sommeliers. The collected data is then used by a recommendation system to suggest the
+                ideal wine for various occasions.
+            </p>
+            <p><strong>Technologies &amp; Skills:</strong> Mobile App Development, Data-Driven Recommendation Systems.</p>
+        </div>
+
+        <div class="project">
+            <h3>Medical Survey</h3>
+            <p><strong>Period:</strong> 2025 </p>
+            <p>
+                Medical Survey is a web polling application that enables conference attendees to respond to questions
+                in real time, with immediate display of results. Currently deployed in scientific medical conferences,
+                this tool significantly enhances audience engagement and feedback collection.
+            </p>
+            <p><strong>Technologies &amp; Skills:</strong> HTML, CSS, JavaScript, Firebase, Cloud Computing.</p>
+        </div>
+
+        <div class="project">
+            <h3>Theatrical Digital Archive – Certosa di San Martino, Naples</h3>
+            <p><strong>Period:</strong> 2019 – 2020</p>
+            <p>
+                During my Bachelor's degree in Computer Science, I developed an application tailored to the conservation
+                and exhibition needs of the "Fondo Niccolini" – a collection of over 900 artworks. By digitizing and
+                systematically archiving these works, museum visitors can explore the collection through thematic
+                classification and a tree-structured exploration of various topics.
+            </p>
+            <p><strong>Technologies &amp; Skills:</strong> Java, Usability Testing, REST APIs, HTML, CSS, JavaScript, Neo4J, Cypher Query Language.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- EXPERIENCES -->
+<section id="experience" class="section">
+    <div class="section-container">
+        <h2>Experiences</h2>
+
+        <div class="experience">
+            <h3>Apple Developer Academy at Apple@UniNa</h3>
+            <p><strong>Period:</strong> September 2019 – July 2020</p>
+            <p>
+                The Apple Developer Academy is a partnership between the University of Napoli Federico II and Apple.
+                Training at the Academy is aimed at developing apps for the world’s most innovative and vibrant app
+                ecosystem. The program focuses on software development, startup creation and app design with an emphasis
+                on creativity and collaboration. During the Academy I developed design skills with tools such as Figma
+                and Sketch and learned how to code in the Swift programming language. I also improved my English skills.
+            </p>
+        </div>
+
+        <div class="experience">
+            <h3>Agritech Academy at Agritech Center@UniNa</h3>
+            <p><strong>Period:</strong> April 2023 – November 2023</p>
+            <p>
+                Agritech Academy is a high-level training course where participants learn how technology is used in the
+                agricultural domain. During the course, I developed skills in Dart, Flutter, and QGIS while working on
+                a project that integrated innovative tech solutions with agricultural challenges.
+            </p>
+        </div>
+
+        <div class="experience">
+            <h3>Python Developer at Maipek Srl</h3>
+            <p><strong>Period:</strong> May 2023 – November 2023</p>
+            <p>
+                At Maipek Srl, I was involved in the development of software for an intra-oral scanner. My work focused
+                on exploring concepts of photogrammetry, image processing, triangulation, and point cloud construction.
+                Technologies used include Python, with frameworks such as OpenCV, CuPy, and TorchVision.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+    <div class="section-container">
+        <h2>Research Interests &amp; Skills</h2>
+        <div class="skills-container">
+            <div class="hard-skills">
+                <h3>Technical &amp; Research Skills</h3>
+                <ul class="skills-list">
+                    <li><i class="fa-solid fa-code"></i> Full-stack development</li>
+                    <li><i class="fa-solid fa-robot"></i> Knowledge Representation and Reasoning</li>
+                    <li><i class="fa-solid fa-brain"></i> Machine learning &amp; XAI</li>
+                    <li><i class="fa-solid fa-chart-line"></i> Time series analysis</li>
+                    <li><i class="fa-solid fa-cloud"></i> Cloud computing</li>
+                    <li><i class="fa-solid fa-database"></i> Data management &amp; databases</li>
+                </ul>
+            </div>
+            <div class="soft-skills">
+                <h3>Collaboration &amp; Communication</h3>
+                <ul class="skills-list">
+                    <li><i class="fa-solid fa-puzzle-piece"></i> Problem solving</li>
+                    <li><i class="fa-solid fa-calendar-check"></i> Project planning</li>
+                    <li><i class="fa-solid fa-users"></i> Teamwork</li>
+                    <li><i class="fa-solid fa-comments"></i> Scientific communication</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contact" class="section">
+    <div class="section-container">
+        <h2>Contacts</h2>
+        <div class="contact-methods">
+            <div class="contact-item">
+                <a href="mailto:andrea.capone@unina.it">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>andrea.capone@unina.it</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="mailto:capone.andrea195@gmail.com">
+                    <i class="fa-brands fa-google"></i>
+                    <span>capone.andrea195@gmail.com</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://www.linkedin.com/in/andrea-capone-887564146/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://github.com/andrewbighead" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://t.me/AndrewJal" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-telegram"></i>
+                    <span>Telegram</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Andrea Capone. All rights reserved.</p>
+</footer>
+
+<script>
+    // Sidebar toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const sidebar = document.querySelector('.sidebar');
+    const closeSidebar = document.querySelector('.close-sidebar');
+    const sidebarOverlay = document.querySelector('.sidebar-overlay');
+    const sidebarLinks = document.querySelectorAll('.sidebar-link');
+
+    function openSidebar() {
+        sidebar.classList.add('active');
+        sidebarOverlay.classList.add('active');
+        sidebar.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeSidebarFunc() {
+        sidebar.classList.remove('active');
+        sidebarOverlay.classList.remove('active');
+        sidebar.setAttribute('aria-hidden', 'true');
+    }
+
+    if (menuToggle) menuToggle.addEventListener('click', openSidebar);
+    if (closeSidebar) closeSidebar.addEventListener('click', closeSidebarFunc);
+    if (sidebarOverlay) sidebarOverlay.addEventListener('click', closeSidebarFunc);
+
+    sidebarLinks.forEach(link => {
+        link.addEventListener('click', closeSidebarFunc);
+    });
+
+    // Smooth scroll con compensazione header
+    const allLinks = document.querySelectorAll('a[href^="#"]');
+
+    allLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            if (targetId.length > 1) {
+                e.preventDefault();
+                const targetEl = document.querySelector(targetId);
+                if (targetEl) {
+                    const headerOffset = 80;
+                    const elementPosition = targetEl.getBoundingClientRect().top + window.scrollY;
+                    const offsetPosition = elementPosition - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+
+    // Toggle abstract per pubblicazioni
+    const toggleButtons = document.querySelectorAll('.toggle-abstract');
+
+    toggleButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const publication = this.closest('.publication');
+            const abstractParagraph = publication.querySelector('.pub-abstract');
+
+            if (!abstractParagraph) return;
+
+            const isHidden = abstractParagraph.style.display === 'none' || abstractParagraph.style.display === '';
+
+            if (isHidden) {
+                abstractParagraph.style.display = 'block';
+                this.textContent = 'Hide abstract';
+            } else {
+                abstractParagraph.style.display = 'none';
+                this.textContent = 'Show abstract';
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
