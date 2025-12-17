@@ -128,52 +128,60 @@
     <div class="section-container">
         <h2>Publications</h2>
 
+        <!-- PAPERS -->
+        <h3 class="pub-subtitle">Papers</h3>
         <ol class="pub-list">
             <!-- IATL – KR 2025 -->
             <li class="publication">
                 <div class="pub-header">
                     <span class="pub-year">2025</span>
-                    <h3>An Intuitionistic Version of Alternating Time-Temporal Logic</h3>
+                    <h3>An Intuitionistic Version of Alternating-Time Temporal Logic</h3>
                 </div>
+
                 <p class="pub-meta">
                     Main Track Conference Paper, <strong>KR 2025</strong>.
                     <span class="pub-doi">DOI:
-                        <a href="https://proceedings.kr.org/2025/19/" target="_blank" rel="noopener noreferrer">
-                            https://proceedings.kr.org/2025/19/
-                        </a>
-                    </span>
+            <a href="https://proceedings.kr.org/2025/19/" target="_blank" rel="noopener noreferrer">
+              https://proceedings.kr.org/2025/19/
+            </a>
+          </span>
                 </p>
 
-                <button type="button" class="toggle-abstract">Show abstract</button>
+                <div class="pub-actions">
+                    <button type="button" class="toggle-btn" data-target="abs-iatl">Show abstract</button>
+                    <button type="button" class="toggle-btn" data-target="bib-iatl">Show BibTeX</button>
+                </div>
 
-                <p class="pub-abstract" style="display:none;">
-                    Multi-Agent Systems (MAS) are essential for modelling
-                    strategic interactions between multiple agents, often involv
-                    ing partial information. Managing this partial information is
-                    crucial for accurate decision-making and strategy optimiza
-                    tion. However, partial information combined with perfect
-                    recall strategies renders verifying strategic properties unde
-                    cidable. Intuitionism, a form of partial information which
-                    has not yet been explored in the context of MAS, introduces
-                    a novel perspective. In this paper, we propose Intuitionis
-                    tic Alternating Time Temporal Logic (IATL), an extension
-                    of ATL that incorporates intuitionistic logic, providing a spe
-                    cialized representation of imperfect information. We define
-                    its syntax, semantics, and key structural properties. Addi
-                    tionally, we propose a PTIME-complete algorithm for IATL
-                    model checking, supported by benchmarks demonstrating its
-                    efficiency.
-                </p>
+                <div id="abs-iatl" class="pub-panel" hidden>
+                    <p class="pub-abstract">
+                        Multi-Agent Systems (MAS) are essential for modelling strategic interactions between multiple agents, often involving partial information...
+                    </p>
+                </div>
+
+                <div id="bib-iatl" class="pub-panel" hidden>
+          <pre class="pub-bibtex">
+              @inproceedings{KR2025-19,
+                title     = {{An Intuitionistic Version of Alternating-Time Temporal Logic}},
+                author    = {Bozzelli, Laura and Capone, Andrea and Catta, Davide and Murano, Aniello},
+                booktitle = {{Proceedings of the 22nd International Conference on Principles of Knowledge Representation and Reasoning}},
+                pages     = {185--195},
+                year      = {2025},
+                month     = {10},
+                doi       = {10.24963/kr.2025/19},
+                url       = {https://doi.org/10.24963/kr.2025/19},
+              }
+          </pre>
+                </div>
+
                 <p class="pub-links">
-                  <a href="papers/iatl.html">
-                    <i class="fa-solid fa-file-lines"></i> Paper page
-                  </a>
-                  <span class="pub-sep">·</span>
-                  <a href="papers/IATL_KR_Camera_Ready.pdf" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-solid fa-file-pdf"></i> Download PDF
-                  </a>
+                    <a href="papers/iatl/iatl.html">
+                        <i class="fa-solid fa-file-lines"></i> Paper page
+                    </a>
+                    <span class="pub-sep">·</span>
+                    <a href="papers/iatl/IATL_KR_Camera_Ready.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-file-pdf"></i> Download PDF
+                    </a>
                 </p>
-
             </li>
 
             <!-- ICTL – EUMAS 2025 -->
@@ -182,87 +190,78 @@
                     <span class="pub-year">2025</span>
                     <h3>An Intuitionistic Version of Computation Tree Logic</h3>
                 </div>
+
                 <p class="pub-meta">
                     Main Track Conference Paper, <strong>EUMAS 2025</strong>.
                     <span class="pub-doi">DOI:
-                        <a href="#" target="_blank" rel="noopener noreferrer">TBA</a>
-                    </span>
+            <a href="#" target="_blank" rel="noopener noreferrer">TBA</a>
+          </span>
                 </p>
 
-                <button type="button" class="toggle-abstract">Show abstract</button>
+                <div class="pub-actions">
+                    <button type="button" class="toggle-btn" data-target="abs-ictl">Show abstract</button>
+                    <button type="button" class="toggle-btn" data-target="bib-ictl">Show BibTeX</button>
+                </div>
 
-                <p class="pub-abstract" style="display:none;">
-                    Model checking plays a central role in the formal verification
-                    of dynamic systems. However, classical temporal logics such as CTL as
-                    sume a complete and absolute perspective on truth, which limits their
-                    expressiveness in contexts where partial information and constructivity
-                    are essential. In this paper, we propose Intuitionistic Computation Tree
-                    Logic (ICTL), a novel temporal logic that integrates the semantics of
-                    CTL with the constructive principles of intuitionistic logic. ICTL adopts
-                    a birelational semantic framework which models the interaction between
-                    temporal evolution and the growth of knowledge over time. We formally
-                    define the syntax and semantics of ICTL, analyze its foundational prop
-                    erties, and show that key fixed-point characterizations of classical CTL
-                    hold in this setting. We then present an efficient model checking algo
-                    rithm for the novel logic, maintaining the same PTIME complexity of
-                    classical CTL. ICTL is particularly well-suited for verifying properties in
-                    systems where traceability, information growth, and constructive reason
-                    ing are crucial, such as medical monitoring, geophysical data analysis,
-                    and database auditing. We validate our theoretical contributions through
-                    the extension of VITAMIN, a verification tool for Multi-Agent Systems,
-                    to support ICTL. Benchmarks confirm the practical tractability of ICTL
-                    model checking, reinforcing its potential for constructive temporal verification
-                    in real-world settings.
-                </p>
+                <div id="abs-ictl" class="pub-panel" hidden>
+                    <p class="pub-abstract">
+                        Model checking plays a central role in the formal verification of dynamic systems...
+                    </p>
+                </div>
+
+                <div id="bib-ictl" class="pub-panel" hidden>
+          <pre class="pub-bibtex">TBA</pre>
+                </div>
+
                 <p class="pub-links">
-                  <a href="papers/ictl.html">
-                    <i class="fa-solid fa-file-lines"></i> Paper page
-                  </a>
-                  <span class="pub-sep">·</span>
-                  <a href="papers/ICTL_EUMAS_Camera_Ready.pdf" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-solid fa-file-pdf"></i> Download PDF
-                  </a>
+                    <a href="papers/ictl/ictl.html">
+                        <i class="fa-solid fa-file-lines"></i> Paper page
+                    </a>
+                    <span class="pub-sep">·</span>
+                    <a href="papers/ictl/ICTL_EUMAS_Camera_Ready.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-file-pdf"></i> Download PDF
+                    </a>
                 </p>
             </li>
+        </ol>
 
+        <!-- THESES -->
+        <h3 class="pub-subtitle">Theses</h3>
+        <ol class="pub-list">
             <!-- ICTL thesis -->
             <li class="publication">
                 <div class="pub-header">
                     <span class="pub-year">2024</span>
                     <h3>An Intuitionistic Version of Computation Tree Logic</h3>
                 </div>
+
                 <p class="pub-meta">
                     Master’s thesis, University of Naples Federico II.
                 </p>
 
-                <button type="button" class="toggle-abstract">Show abstract</button>
+                <div class="pub-actions">
+                    <button type="button" class="toggle-btn" data-target="abs-thesis-ictl">Show abstract</button>
+                    <button type="button" class="toggle-btn" data-target="bib-thesis-ictl">Show BibTeX</button>
+                </div>
 
-                <p class="pub-abstract" style="display:none;">
-                    Mythesis presents an intuitionistic version of Computation Tree Logic (CTL), known as
-                    Intuitionistic Computation Tree Logic (ICTL). I focused my efforts on the development
-                    and understanding of ICTL, which merges intuitionistic logic with CTL. A distinctive
-                    feature of ICTL is its birelational models and syntax that clearly distinguishes between
-                    existential and universal quantifications.
-                    In my research, I outlined the syntax and semantics of ICTL, examined the properties
-                    of birelational models, and verified the satisfiability of ICTL formulas. I explored the
-                    differences between CTL and ICTL, particularly the validity of fixed-point equivalences,
-                    introducing a new version of ICTLwithanadditional condition on the models to overcome
-                    limitations of the original proposal. I developed an efficient model checking algorithm
-                    for this new version of ICTL, highlighting its computational complexity and practical
-                    applications in constructively verifying system properties.
-                    In my thesis, I emphasized the importance of ICTL in verifying properties across vari
-                    ous contexts, including open systems, and highlighted its potential for addressing more
-                    complex verification tasks compared to classical CTL. I discussed ICTL’s application in
-                    different scenarios such as medical monitoring, database management, and agricultural
-                    land monitoring, emphasizing its ability to ensure persistent knowledge and information
-                    traceability over time.
-                    Finally, I presented an extension of VITAMIN, a prototype designed for formal verifica
-                    tion of Multi-Agent Systems (MAS), highlighting its modularity, versatility, and ease of
-                    extension to accommodate various logics and models in property verification. I provided
-                    benchmarks to demonstrate the efficiency of the ICTL model checking process in VITA
-                    MIN. I hope that my thesis can contribute to the existing literature on CTL and stimulate
-                    further research in this field
-                </p>
+                <div id="abs-thesis-ictl" class="pub-panel" hidden>
+                    <p class="pub-abstract">
+                        My thesis presents an intuitionistic version of Computation Tree Logic (CTL), known as ICTL...
+                    </p>
+                </div>
+
+                <div id="bib-thesis-ictl" class="pub-panel" hidden>
+          <pre class="pub-bibtex">
+              @article{
+                  capone2024intuitionistic,
+                  title={An Intuitionistic Version of Computation Tree Logic},
+                  author={Capone, Andrea and Catta, Davide and Murano, Aniello and others},
+                  year={2024},
+                  publisher={Andrea Capone}
+              }
+          </pre>
+                </div>
+
                 <p class="pub-links">
                     <a href="https://www.iris.unina.it/retrieve/00ddec36-c92a-4136-9f1c-cc395be94856/ICTL.pdf" target="_blank" rel="noopener noreferrer">
                         <i class="fa-solid fa-file-pdf"></i> Download PDF
@@ -272,6 +271,7 @@
         </ol>
     </div>
 </section>
+
 
 <!-- ATTENDED CONFERENCES -->
 <section id="conferences" class="section">
@@ -609,6 +609,25 @@
         });
     });
 </script>
+
+<script>
+    document.addEventListener("click", (e) => {
+        const btn = e.target.closest(".toggle-btn");
+        if (!btn) return;
+
+        const id = btn.getAttribute("data-target");
+        const panel = document.getElementById(id);
+        if (!panel) return;
+
+        const isHidden = panel.hasAttribute("hidden");
+        panel.toggleAttribute("hidden");
+
+        // aggiorna testo bottone in modo “furbo”
+        const base = btn.textContent.replace(/^Hide /, "").replace(/^Show /, "");
+        btn.textContent = (isHidden ? "Hide " : "Show ") + base;
+    });
+</script>
+
 
 </body>
 </html>
