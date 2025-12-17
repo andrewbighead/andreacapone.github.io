@@ -12,15 +12,8 @@
     <meta name="citation_author" content="Davide Catta" />
     <meta name="citation_author" content="Vadim Malvone" />
     <meta name="citation_author" content="Aniello Murano" />
-
     <meta name="citation_conference_title"
           content="Proceedings of the European Conference on Multi-Agent Systems (EUMAS 2025)" />
-
-    <!-- Se/Quando li saprai, aggiungili (meglio che lasciarli sbagliati) -->
-    <!-- <meta name="citation_publication_date" content="2025/MM" /> -->
-    <!-- <meta name="citation_firstpage" content="XXX" /> -->
-    <!-- <meta name="citation_lastpage" content="YYY" /> -->
-
     <meta name="citation_pdf_url"
           content="https://andrewbighead.github.io/andreacapone.github.io/papers/ictl/ICTL_EUMAS_Camera_Ready.pdf" />
 
@@ -39,52 +32,34 @@
         <h1 class="paper-title">An Intuitionistic Version of Computation Tree Logic</h1>
 
         <p class="paper-authors">
-            Laura Bozzelli, Andrea Capone, Davide Catta, Vadim Malvone, Aniello Murano
+            <strong>Laura Bozzelli</strong>, Andrea Capone, Davide Catta, Vadim Malvone, Aniello Murano
         </p>
 
         <p class="paper-meta">
-            European Conference on Multi-Agent Systems (EUMAS 2025) •
-            Bucharest, Romania •
-            Pages TBA •
-            Publication date TBA
+            EUMAS 2025 • Bucharest, Romania • Pages TBA • Publication date TBA
         </p>
 
         <div class="paper-actions">
             <a class="btn-primary" href="ICTL_EUMAS_Camera_Ready.pdf">
                 <i class="fa-solid fa-file-pdf"></i> Download PDF
             </a>
-            <!-- attiva quando avrai la pagina ufficiale -->
-            <!--
-            <a class="btn-outline" href="https://..." target="_blank" rel="noopener noreferrer">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i> Official page
-            </a>
-            -->
         </div>
 
         <hr class="about-separator" />
 
-        <dl class="paper-details">
-            <div>
-                <dt>Venue</dt>
-                <dd>EUMAS 2025</dd>
-            </div>
-            <div>
-                <dt>Location</dt>
-                <dd>Bucharest, Romania</dd>
-            </div>
-            <div>
-                <dt>Pages</dt>
-                <dd>TBA</dd>
-            </div>
-            <div>
-                <dt>Publication date</dt>
-                <dd>TBA</dd>
-            </div>
-            <div class="paper-wide">
-                <dt>Official page</dt>
-                <dd>TBA</dd>
-            </div>
-        </dl>
+        <section class="paper-section">
+            <h2>Abstract</h2>
+            <p>
+                Model checking plays a central role in the formal verification of dynamic systems. However, classical temporal logics such as CTL assume a complete and absolute perspective on truth, which limits their expressiveness in contexts where partial information and constructivity are essential. In this paper, we propose Intuitionistic Computation Tree Logic (ICTL), a novel temporal logic that integrates the semantics of CTL with the constructive principles of intuitionistic logic. ICTL adopts a birelational semantic framework
+                which models the interaction between temporal evolution and the growth of knowledge over time.
+                We formally define the syntax and semantics of ICTL, analyze its foundational properties, and show that key fixed-point characterizations of classical CTL hold in this setting. We then present an efficient model checking algorithm for the novel logic, maintaining the same PTIME complexity of classical CTL. ICTL is particularly well-suited for verifying properties in systems where traceability, information growth, and constructive reasoning are crucial, such as medical monitoring, geophysical data analysis, and database auditing. We validate our theoretical contributions through the extension of VITAMIN, a verification tool for Multi-Agent Systems, to support ICTL. Benchmarks confirm the practical tractability of ICTL model checking, reinforcing its potential for constructive temporal verification in real-world settings.
+            </p>
+        </section>
+
+        <section class="paper-section">
+            <h2>BibTeX</h2>
+            <pre class="pub-bibtex">TBA</pre>
+        </section>
 
     </div>
 </main>
