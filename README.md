@@ -1,2 +1,2 @@
 # Andrea Capone - WebPage
-Personal academic website of Andrea Capone, including publications and CV.
+Academic website hosting pubblications and CV
