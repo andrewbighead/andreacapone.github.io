@@ -615,3 +615,8 @@ footer {
     font-size: 0.85rem;
     line-height: 1.55;
 }
+
+.pub-doi{
+    display: block;
+    margin-top: 0.15rem;
+}
