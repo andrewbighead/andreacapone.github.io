@@ -620,3 +620,92 @@ footer {
     display: block;
     margin-top: 0.15rem;
 }
+
+/* PAPER PAGES */
+.paper-container {
+    max-width: 900px;
+}
+
+.paper-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.paper-back {
+    text-decoration: none;
+    color: #0369a1;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.paper-back:hover {
+    text-decoration: underline;
+}
+
+.paper-badge {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #0f766e;
+    background: #ccfbf1;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    border: 1px solid rgba(15, 118, 110, 0.25);
+}
+
+.paper-title {
+    margin: 0.2rem 0 0.6rem;
+    color: #0f172a;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.paper-authors {
+    margin: 0 0 0.35rem;
+    color: #111827;
+    font-size: 1.02rem;
+}
+
+.paper-meta {
+    margin: 0 0 1rem;
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+.paper-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1rem 0 0.25rem;
+}
+
+.paper-details {
+    margin: 0.25rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem 1.25rem;
+}
+
+.paper-details dt {
+    font-weight: 700;
+    color: #0f172a;
+    font-size: 0.9rem;
+}
+
+.paper-details dd {
+    margin: 0.15rem 0 0;
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+.paper-wide {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 768px) {
+    .paper-title { font-size: 1.65rem; }
+    .paper-details { grid-template-columns: 1fr; }
+    .paper-top { flex-direction: column; align-items: flex-start; }
+}
