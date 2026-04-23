@@ -1,0 +1,30 @@
+[
+  {
+    "name": "KR 2025 – 22nd International Conference on Principles of Knowledge Representation and Reasoning",
+    "url": "https://kr.org/KR2025/",
+    "role": "Presenter (Main Track Conference Paper: <em>An Intuitionistic Version of Alternating Time-Temporal Logic</em>)",
+    "location": "Melbourne, Australia",
+    "dates": "11–17 November 2025"
+  },
+  {
+    "name": "EUMAS 2025 – 22nd European Conference on Multi-Agent Systems",
+    "url": "https://euramas.github.io/eumas2025/",
+    "role": "Presenter (Main Track Conference Paper: <em>An Intuitionistic Version of Computation Tree Logic</em>)",
+    "location": "Bucharest, Romania",
+    "dates": "3–5 September 2025"
+  },
+  {
+    "name": "CSL 2024 – 32nd EACSL Annual Conference on Computer Science Logic",
+    "url": "https://csl2024.github.io/Home/",
+    "role": "Local organization support (University of Naples Federico II)",
+    "location": "Naples, Italy",
+    "dates": "19–23 February 2024"
+  },
+  {
+    "name": "EUMAS 2023 – 20th European Conference on Multi-Agent Systems",
+    "url": "https://vadimmalvone.github.io/eumas2023/",
+    "role": "Local organization support (University of Naples Federico II)",
+    "location": "Naples, Italy",
+    "dates": "13–15 September 2023"
+  }
+]

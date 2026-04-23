@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Towards Neurosymbolic AI for Risk Assessment of Bradyseism",
+    "period": "2024 – 2028",
+    "description": "As part of my PhD research, I am working on the project <em>\"Towards Neurosymbolic AI for Risk Assessment in Geological Hazards\"</em>, which focuses on predicting seismic events associated with <strong>bradyseism</strong> in the <strong>Campi Flegrei</strong> area of Naples. In collaboration with the <strong>Italian National Institute of Geophysics and Volcanology (INGV)</strong>, I am analyzing ground deformation data from GNSS stations and progressively integrating additional risk factors such as <strong>sinkholes</strong> and <strong>landslides</strong>. My research aims to advance <strong>Explainable AI (XAI)</strong> methodologies, combining multimodal data analysis with <strong>neurosymbolic approaches</strong> to extract formal rules that capture underlying geophysical dynamics and support <strong>risk assessment</strong> and <strong>disaster response planning</strong>.",
+    "tech": "AI Modeling, Explainable AI, Multimodal Data Integration, Neuro-Symbolic Methods."
+  },
+  {
+    "title": "APLAND – AI for Landslide Susceptibility Mapping",
+    "period": "2025 – 2026",
+    "description": "APLAND is an applied research initiative focused on developing AI-driven tools for <strong>landslide susceptibility assessment</strong>. In collaboration with <strong>BIDATA</strong>, I contributed to the modelling pipeline by designing and implementing a data-driven workflow based on the <strong>Frequency Ratio (FR)</strong> method for generating susceptibility maps. The project integrates geospatial data, environmental conditioning factors, and machine-learning components to support risk analysis and decision-making for territorial monitoring and civil protection.",
+    "tech": "AI Modeling, Explainable AI, Geospatial Data Analysis, Frequency Ratio Method, Multimodal Data Integration, Neuro-Symbolic Methods, FastAPI, Geoserver, Rasterio, Streamlit."
+  },
+  {
+    "title": "VITAMIN – Model Checker",
+    "period": "2024 – Ongoing",
+    "description": "Working with the ASTREA research team, I am involved in the engineering and development of VITAMIN, a model checker designed for verifying complex systems. My focus is on optimizing the processing of input data, refactoring and testing the code, and enhancing readability. I have also implemented model checking for two new formalisms: Intuitionistic CTL and Intuitionistic ATL.",
+    "tech": "Python, Pandas, NumPy."
+  },
+  {
+    "title": "Food Talk",
+    "period": "2023 – Ongoing",
+    "description": "As part of the Agritech Academy, I collaborated with a team to develop an application designed to optimize the traceability of fresh produce from production to consumption. The system streamlines the supply chain, offering real-time insights to improve quality control and enhance market transparency.",
+    "tech": "Mobile and Web Development, Data Integration, Process Optimization."
+  },
+  {
+    "title": "Wine – Digital Sommelier Assistant",
+    "period": "2025 – Ongoing",
+    "description": "Wine is a mobile application designed for sommeliers to digitally compile tasting sheets for the Italian Association of Sommeliers. The collected data is then used by a recommendation system to suggest the ideal wine for various occasions.",
+    "tech": "Mobile App Development, Data-Driven Recommendation Systems."
+  },
+  {
+    "title": "Medical Survey",
+    "period": "2025",
+    "description": "Medical Survey is a web polling application that enables conference attendees to respond to questions in real time, with immediate display of results. Currently deployed in scientific medical conferences, this tool significantly enhances audience engagement and feedback collection.",
+    "tech": "HTML, CSS, JavaScript, Firebase, Cloud Computing."
+  },
+  {
+    "title": "Theatrical Digital Archive – Certosa di San Martino, Naples",
+    "period": "2019 – 2020",
+    "description": "During my Bachelor's degree in Computer Science, I developed an application tailored to the conservation and exhibition needs of the \"Fondo Niccolini\" – a collection of over 900 artworks. By digitizing and systematically archiving these works, museum visitors can explore the collection through thematic classification and a tree-structured exploration of various topics.",
+    "tech": "Java, Usability Testing, REST APIs, HTML, CSS, JavaScript, Neo4J, Cypher Query Language."
+  }
+]

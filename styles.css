@@ -721,3 +721,10 @@ footer {
 .pub-doi {
     min-width: 0;              /* evita overflow in alcuni layout */
 }
+
+.publication .pub-authors {
+    margin: 0.15rem 0 0.35rem;
+    font-size: 0.92rem;
+    color: #4b5563;
+    font-style: italic;
+}
