@@ -1,1 +1,234 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Capone — PhD Student in Artificial Intelligence</title>
+    <meta name="description" content="Andrea Capone — PhD student in Artificial Intelligence at the University of Naples Federico II. Research on NeuroSymbolic AI, Knowledge Representation, Strategic Reasoning, Model Checking and Explainable AI.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="navbar-container">
+        <div class="logo">Andrea Capone</div>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="desktop-menu">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#conferences">Attended Conferences</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experiences</a></li>
+                <li><a href="#skills">Research Interests &amp; Skills</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Mobile sidebar -->
+<aside class="sidebar" aria-hidden="true">
+    <button class="close-sidebar" aria-label="Close navigation">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+    <ul>
+        <li><a href="#about" class="sidebar-link">About</a></li>
+        <li><a href="#publications" class="sidebar-link">Publications</a></li>
+        <li><a href="#conferences" class="sidebar-link">Attended Conferences</a></li>
+        <li><a href="#projects" class="sidebar-link">Projects</a></li>
+        <li><a href="#experience" class="sidebar-link">Experiences</a></li>
+        <li><a href="#skills" class="sidebar-link">Research Interests &amp; Skills</a></li>
+        <li><a href="#contact" class="sidebar-link">Contacts</a></li>
+    </ul>
+</aside>
+
+<div class="sidebar-overlay"></div>
+
+<!-- ABOUT / HERO (static) -->
+<section id="about" class="section">
+    <div class="section-container about-container">
+        <div class="profile-image">
+            <img src="pic.jpg" alt="Profile Photo of Andrea Capone">
+        </div>
+
+        <div class="about-text">
+            <h1 class="name-title">Andrea Capone</h1>
+            <p class="subtitle">
+                PhD Student in Artificial Intelligence <br>
+                <span class="affiliation">University of Naples Federico II</span>
+            </p>
+
+            <p class="research-keywords">
+                Strategic Reasoning · Knowledge Representation · NeuroSymbolic AI ·
+                Explainable Artificial Intelligence · Time Series Analysis ·
+                Model Checking and Formal Verification
+            </p>
+
+            <div class="hero-actions">
+                <a href="cv.pdf" class="btn-primary" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-file-pdf"></i> Curriculum Vitae
+                </a>
+                <a href="https://orcid.org/0009-0002-7708-9261" class="btn-outline" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-orcid"></i> ORCID profile
+                </a>
+            </div>
+
+            <hr class="about-separator">
+
+            <p>
+                I am a PhD student in Artificial Intelligence at the University of Naples Federico II,
+                conducting my research within the <strong>ASTREA (Automated STRategic REAsoning)</strong> group,
+                <strong>DIST (Department of Science and Technology)</strong> department at University of Naples
+                Parthenope and the <strong>(INGV) National Institute of Geophysics and Volcanology</strong>
+                Research Institute.
+            </p>
+
+            <p>
+                My work aims to develop principled methods at the intersection of
+                <strong>NeuroSymbolic AI</strong>,
+                <strong>Knowledge Representation and Reasoning</strong>,
+                and <strong>Explainable Artificial Intelligence</strong>.
+                I focus on integrating symbolic models with data-driven approaches to support
+                transparent reasoning, verifiable decision-making, and interpretable AI systems.
+            </p>
+
+            <div class="about-columns">
+                <div>
+                    <h3>Research interests</h3>
+                    <ul>
+                        <li>Knowledge Representation</li>
+                        <li>Strategic Reasoning</li>
+                        <li>Model Checking and Formal Verification</li>
+                        <li>NeuroSymbolic AI</li>
+                        <li>Explainable Artificial Intelligence</li>
+                        <li>Time Series Analysis</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Current roles &amp; collaborations</h3>
+                    <ul>
+                        <li>PhD Student, Artificial Intelligence, University of Naples Federico II</li>
+                        <li>Member of DIST Department (Prof. Angelo Ciaramella)</li>
+                        <li>Collaboration with INGV on Campi Flegrei bradyseism</li>
+                        <li>Member of ASTREA research group (Prof. Nello Murano)</li>
+                        <li>Collaboration with BIDATA SRL on APLAND Project (2025)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PUBLICATIONS (rendered dynamically from data/publications.json) -->
+<section id="publications" class="section">
+    <div class="section-container">
+        <h2>Publications</h2>
+        <p><em>Loading publications…</em></p>
+    </div>
+</section>
+
+<!-- ATTENDED CONFERENCES (rendered dynamically from data/conferences.json) -->
+<section id="conferences" class="section">
+    <div class="section-container">
+        <h2>Attended Conferences</h2>
+        <p><em>Loading conferences…</em></p>
+    </div>
+</section>
+
+<!-- PROJECTS (rendered dynamically from data/projects.json) -->
+<section id="projects" class="section">
+    <div class="section-container">
+        <h2>Projects</h2>
+        <p><em>Loading projects…</em></p>
+    </div>
+</section>
+
+<!-- EXPERIENCES (rendered dynamically from data/experiences.json) -->
+<section id="experience" class="section">
+    <div class="section-container">
+        <h2>Experiences</h2>
+        <p><em>Loading experiences…</em></p>
+    </div>
+</section>
+
+<!-- SKILLS (static) -->
+<section id="skills" class="section">
+    <div class="section-container">
+        <h2>Research Interests &amp; Skills</h2>
+        <div class="skills-container">
+            <div class="hard-skills">
+                <h3>Technical &amp; Research Skills</h3>
+                <ul class="skills-list">
+                    <li><i class="fa-solid fa-code"></i> Full-stack development</li>
+                    <li><i class="fa-solid fa-robot"></i> Knowledge Representation and Reasoning</li>
+                    <li><i class="fa-solid fa-brain"></i> Machine learning &amp; XAI</li>
+                    <li><i class="fa-solid fa-chart-line"></i> Time series analysis</li>
+                    <li><i class="fa-solid fa-cloud"></i> Cloud computing</li>
+                    <li><i class="fa-solid fa-database"></i> Data management &amp; databases</li>
+                </ul>
+            </div>
+            <div class="soft-skills">
+                <h3>Collaboration &amp; Communication</h3>
+                <ul class="skills-list">
+                    <li><i class="fa-solid fa-puzzle-piece"></i> Problem solving</li>
+                    <li><i class="fa-solid fa-calendar-check"></i> Project planning</li>
+                    <li><i class="fa-solid fa-users"></i> Teamwork</li>
+                    <li><i class="fa-solid fa-comments"></i> Scientific communication</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTS (static) -->
+<section id="contact" class="section">
+    <div class="section-container">
+        <h2>Contacts</h2>
+        <div class="contact-methods">
+            <div class="contact-item">
+                <a href="mailto:andrea.capone@unina.it">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>andrea.capone@unina.it</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="mailto:capone.andrea195@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>capone.andrea195@gmail.com</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://www.linkedin.com/in/andrea-capone-887564146/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://github.com/andrewbighead" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://t.me/AndrewJal" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-telegram"></i>
+                    <span>Telegram</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; <span id="footer-year"></span> Andrea Capone. All rights reserved.</p>
+</footer>
+
+<script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+<script src="main.js"></script>
+
+</body>
+</html>
