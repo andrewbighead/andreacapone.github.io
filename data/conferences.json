@@ -1,5 +1,19 @@
 [
   {
+    "name": "Ital-IA 2026 - Proceedings of the 6th National Conference on Artificial Intelligence",
+    "url": "https://www.ital-ia2026.it/",
+    "role": "Presenter (Main Track Conference Paper: <em>An Intuitionistic Version of Alternating Time-Temporal Logic</em>)",
+    "location": "Roma, Italia",
+    "dates": "18-19 June 2026"
+  },
+  {
+    "name": "WIRN 2026 - XXXIV Italian Workshop on Neural Networks",
+    "url": "https://siren.science/index.html",
+    "role": "Presenter (Main Track Conference Paper: <em>Gaussian Process and Kalman Baselines for Bradyseismic Signal\n               Extraction from GNSS Time Series at Campi Flegrei</em>)",
+    "location": "Vietri Sul Mare, Italia",
+    "dates": "09-12 June 2026"
+  },
+  {
     "name": "KR 2025 – 22nd International Conference on Principles of Knowledge Representation and Reasoning",
     "url": "https://kr.org/KR2025/",
     "role": "Presenter (Main Track Conference Paper: <em>An Intuitionistic Version of Alternating Time-Temporal Logic</em>)",

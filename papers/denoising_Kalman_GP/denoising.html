@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gaussian Process and Kalman Baselines for Bradyseismic Signal Extraction from GNSS Time Series at Campi Flegrei — Andrea Capone</title>
+    <meta name="description" content="Monitoring ground deformation at Campi Flegrei with GNSS requires separating the slow bradyseismic deformation signal from the trend, the seasonality, and the stochastic noise that overwhelm it. This work addresses this problem on an hourly dataset of seven GNSS stations in baseline configuration, t…" />
+    <link rel="canonical" href="https://andrewbighead.github.io/andreacapone.github.io/papers/denoising_Kalman_GP/denoising.html" />
+
+    <!-- Google Scholar / Highwire Press -->
+    <meta name="citation_title" content="Gaussian Process and Kalman Baselines for Bradyseismic Signal Extraction from GNSS Time Series at Campi Flegrei" />
+    <meta name="citation_author" content="Andrea Capone" />
+    <meta name="citation_author" content="Gabriel Nocerino" />
+    <meta name="citation_author" content="Angelo Ciaramella" />
+    <meta name="citation_author" content="Gianpaolo Cecere" />
+    <meta name="citation_author" content="Prospero De Martino" />
+    <meta name="citation_conference_title" content="XXXIV Italian Workshop on Neural Networks" />
+    <meta name="citation_publication_date" content="2026/06" />
+    <meta name="citation_pdf_url" content="https://andrewbighead.github.io/andreacapone.github.io/papers/denoising_Kalman_GP/WIRN2026_Denoising.pdf" />
+    <meta name="citation_abstract_html_url" content="https://andrewbighead.github.io/andreacapone.github.io/papers/denoising_Kalman_GP/denoising.html" />
+    <meta name="citation_language" content="en" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Gaussian Process and Kalman Baselines for Bradyseismic Signal Extraction from GNSS Time Series at Campi Flegrei" />
+    <meta property="og:description" content="Monitoring ground deformation at Campi Flegrei with GNSS requires separating the slow bradyseismic deformation signal from the trend, the seasonality, and the stochastic noise that overwhelm it. This work addresses this problem on an hourly dataset of seven GNSS stations in baseline configuration, t…" />
+    <meta property="og:url" content="https://andrewbighead.github.io/andreacapone.github.io/papers/denoising_Kalman_GP/denoising.html" />
+    <meta property="og:site_name" content="Andrea Capone" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Gaussian Process and Kalman Baselines for Bradyseismic Signal Extraction from GNSS Time Series at Campi Flegrei" />
+    <meta name="twitter:description" content="Monitoring ground deformation at Campi Flegrei with GNSS requires separating the slow bradyseismic deformation signal from the trend, the seasonality, and the stochastic noise that overwhelm it. This work addresses this problem on an hourly dataset of seven GNSS stations in baseline configuration, t…" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+</head>
+
+<body>
+<main class="section">
+    <div class="section-container paper-container">
+
+        <div class="paper-top">
+            <a class="paper-back" href="../../index.html">← Back to home</a>
+            <span class="paper-badge">KR 2025 • Main Track</span>
+        </div>
+
+        <h1 class="paper-title">Gaussian Process and Kalman Baselines for Bradyseismic Signal Extraction from GNSS Time Series at Campi Flegrei</h1>
+
+        <p class="paper-authors">
+            Andrea Capone, Gabriel Nocerino, Angelo Ciaramella, Gianpaolo Cecere, Prospero De Martino
+        </p>
+
+        <p class="paper-meta">
+            WIRN 2026 • Vietri Sul Mare, Italia
+        </p>
+
+        <div class="paper-actions">
+            <a class="btn-primary" href="WIRN2026_Denoising.pdf">
+                <i class="fa-solid fa-file-pdf"></i> Download PDF
+            </a>
+        </div>
+
+        <hr class="about-separator" />
+
+        <section class="paper-section">
+            <h2>Abstract</h2>
+            <p>Monitoring ground deformation at Campi Flegrei with GNSS requires separating the slow bradyseismic deformation signal from the trend, the seasonality, and the stochastic noise that overwhelm it. This work addresses this problem on an hourly dataset of seven GNSS stations in baseline configuration, three components each, spanning approximately four years of observations. We present a preprocessing chain that removes the deterministic components and the measurement artifacts and characterizes the residual noise as power-law plus white noise. We then construct two inference baselines for extracting the deformation signal: a Gaussian Process in batch formulation and a state-space Kalman filter, both grounded in the same generative model, so as to isolate the effect of the inference engine alone. The comparison, carried out on the residual spectrum, on the estimated noise parameters, and on the extracted signal, shows that the two baselines preserve the spectral slope to the third decimal place, agree on the power-law noise correction factor, and extract the same deformation signal, with sub-millimeter differences against a signal of tens-of-centimeters magnitude. This agreement holds despite the two methods differing in kernel, regularization, temporal resolution, and prior distribution, and indicates that, for these data, the extracted deformation signal is robust to the choice of estimation method.</p>
+        </section>
+
+        <section class="paper-section">
+            <h2>BibTeX</h2>
+<pre class="pub-bibtex">@inproceedings{capone2026bradyseismic,
+  author    = {Capone, Andrea and Nocerino, Gabriel and Ciaramella, Angelo and
+               Cecere, Gianpaolo and De Martino, Prospero},
+  title     = {Gaussian Process and Kalman Baselines for Bradyseismic Signal
+               Extraction from {GNSS} Time Series at Campi Flegrei},
+  booktitle = {Italian Workshop on Neural Networks (WIRN 2026)},
+  year      = {2026},
+  note      = {To appear}
+}</pre>
+        </section>
+
+    </div>
+</main>
+</body>
+</html>
