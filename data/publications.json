@@ -1,6 +1,82 @@
 {
   "baseUrl": "https://andrewbighead.github.io/andreacapone.github.io",
-  "papers": [
+  "papers":
+  [
+    {
+      "id": "iatl-reasoning-overlay-2026",
+      "slug": "reasoning-iatl",
+      "year": "2026",
+      "month": null,
+      "title": "Reasoning About Intuitionistic Alternating-Time Temporal Logic",
+      "authors": [
+        "Andrea Capone"
+      ],
+      "venueShort": "Overlay 2026",
+      "venueFull": "Workshop Paper, Overlay 2026",
+      "conferenceTitle": "Proceedings of the 8th International Workshop on Artificial Intelligence and fOrmal VERification, Logic, Automata, and sYnthesis (Overlay 2026)",
+      "type": "workshop",
+      "badge": "Overlay 2026 • Workshop",
+      "location": "Lisbona, Portogallo",
+      "pages": null,
+      "firstPage": null,
+      "lastPage": null,
+      "publicationDate": null,
+      "doi": null,
+      "officialUrl": null,
+      "officialLabel": "Official page",
+      "doiLabel": "DOI",
+      "doiText": "TBA",
+      "doiUrl": null,
+      "abstract": "Multi-Agent Systems (MAS) require formalisms capable of handling partial and evolving information. While imperfect-information extensions of Alternating-time Temporal Logic (ATL) are highly expressive, they typically make model checking undecidable. This paper summarises Intuitionistic ATL (IATL), an extension of ATL that replaces classical propositional truth with intuitionistic truth, capturing a novel, computationally tractable notion of imperfect information based on information refinement. We summarize IATL's syntax and semantics over birelational concurrent game structures (BCGS), the truth-monotonicity characterisation, and the PTIME-completeness of model checking, matching the complexity of classical ATL.\n",
+      "bibtex": "@inproceedings{capone2026reasoning,\n  author    = {Capone, Andrea},\n  title     = {Reasoning About Intuitionistic Alternating-Time Temporal Logic},\n  booktitle = {Proceedings of the 8th International Workshop on Artificial\n               Intelligence and fOrmal VERification, Logic, Automata, and\n               sYnthesis (Overlay 2026)},\n  year      = {2026},\n  address   = {Lisbon, Portugal},\n  publisher = {CEUR-WS.org},\n  series    = {CEUR Workshop Proceedings},\n  note      = {To appear}\n}",
+      "pageUrl": "papers/iatl_review/reasoning-iatl.html",
+      "pdfUrl": "papers/iatl_review/Overlay2026_Reasoning.pdf",
+      "pdfFilename": "Overlay2026_Reasoning.pdf"
+    },
+    {
+      "id": "gamel-neurosymbolic-2026",
+      "slug": "gamel-energy-communities",
+      "year": "2026",
+      "month": "06",
+      "title": "GameL: a Neuro-Symbolic Agentic Architecture Toward Autonomous and Resilient Energy Communities",
+      "authors": [
+        "Erica Ambrosino",
+        "Amedeo Andreotti",
+        "Marco Aruta",
+        "Gabriel Ballot",
+        "Andrea Capone",
+        "Giulio de Notaristefani di Vastogirardi",
+        "Sara Ferrigno",
+        "Francesco Improta",
+        "Ciro Listone",
+        "Vadim Malvone",
+        "Bastien Maubert",
+        "Floriana Nappi",
+        "Salvatore Romano",
+        "Aniello Murano"
+      ],
+      "venueShort": "CILC 2026",
+      "venueFull": "Main Track Conference Paper, CILC 2026",
+      "conferenceTitle": "Proceedings of the 41st Italian Conference on Computational Logic (CILC 2026)",
+      "type": "conference",
+      "badge": "CILC 2026 • Main Track",
+      "location": "Ferrara, Italia",
+      "pages": null,
+      "firstPage": null,
+      "lastPage": null,
+      "publicationDate": null,
+      "doi": null,
+      "officialUrl": null,
+      "officialLabel": "Official page",
+      "doiLabel": "DOI",
+      "doiText": "TBA",
+      "doiUrl": null,
+      "abstract": "Energy dependence on fossil fuels represents one of the most critical vulnerabilities of modern societies, exposing them to persistent instability and precarious supply conditions, as geopolitical crises have demonstrated. Italy exemplifies this vulnerability, as the vast majority of its energy consumption relies on fossil fuel imports. Efficient, competitive, and sovereign alternatives are therefore increasingly urgent. Fortunately renewable sources are today generating a growing and geographically distributed supply of clean energy. If properly orchestrated this diversified grid can mitigate, and ultimately resolve, the dependence created by fossil fuel imports. This paper presents GameL, an ongoing research project proposing an intelligent decision-support platform for energy communities, built on Agentic Neuro-Symbolic Artificial Intelligence. GameL aims to foster energy independence by reducing reliance on external supply and empowering users who both produce and consume energy (prosumers) to actively govern their own energy flows. To this end, each energy asset in the community is modeled as a proactive agent negotiating energy flows in real time through explainable, formally reasoned decisions. The system is designed to be resilient, instantly redirecting surplus energy toward those who need it, and efficient, anticipating demand to minimize dispersion.\n",
+      "bibtex": "@inproceedings{ambrosino2026gamel,\n  author    = {Ambrosino, Erica and Andreotti, Amedeo and Aruta, Marco and\n               Ballot, Gabriel and Capone, Andrea and de Notaristefani di\n               Vastogirardi, Giulio and Ferrigno, Sara and Improta, Francesco\n               and Listone, Ciro and Malvone, Vadim and Maubert, Bastien and\n               Nappi, Floriana and Romano, Salvatore and Murano, Aniello},\n  title     = {GameL: a Neuro-Symbolic Agentic Architecture Toward Autonomous\n               and Resilient Energy Communities},\n  booktitle = {Proceedings of the 41st Italian Conference on Computational\n               Logic (CILC 2026)},\n  year      = {2026},\n  address   = {Ferrara, Italy},\n  publisher = {CEUR-WS.org},\n  series    = {CEUR Workshop Proceedings},\n  note      = {To appear}\n}",
+      "pageUrl": "papers/gamel_neurosymbolic/gamel.html",
+      "pdfUrl": "papers/gamel_neurosymbolic/GameL_paper.pdf",
+      "pdfFilename": "GameL_paper.pdf"
+    },
     {
       "id": "iatl-neurosymbolic-2026",
       "slug": "neurosymbolic-iatl",
@@ -31,7 +107,7 @@
       "bibtex": "@inproceedings{capone2026neurosymbolic,\n  author    = {Capone, Andrea and Murano, Aniello},\n  title     = {A Neurosymbolic Approach for Landslide Risk Assessment},\n  booktitle = {Proceedings of the 6th National Conference on Artificial\n               Intelligence (Ital-IA 2026)},\n  year      = {2026},\n  address   = {Rome, Italy},\n  publisher = {CEUR-WS.org},\n  series    = {CEUR Workshop Proceedings},\n  note      = {To appear}\n}",
       "pageUrl": "papers/landslide_neurosymbolic/iatl-neurosymbolic.html",
       "pdfUrl": "papers/landslide_neurosymbolic/Ital_IA2026_Neurosymbolic.pdf",
-      "pdfFilename": "WIRN2026_Denoising.pdf"
+      "pdfFilename": "Ital_IA2026_Neurosymbolic.pdf"
     },
     {
       "id": "denoising-wirn-2026",
