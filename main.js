@@ -14,8 +14,8 @@
   const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
 
   // Minimal HTML escaper for fields that must be treated as plain text
-  // (title, bibtex, abstract). Fields containing HTML (role, description)
-  // are injected as-is on purpose.
+  // (title, abstract, bibtex, ...). Fields containing HTML (role,
+  // description) are injected as-is on purpose.
   const escapeHTML = (s) =>
     String(s)
       .replace(/&/g, "&amp;")
@@ -37,35 +37,42 @@
     const absId = `abs-${pub.id}`;
     const bibId = `bib-${pub.id}`;
 
-    // Support both the new enriched schema (venueFull) and simple `venue`
-    const venue = pub.venueFull || pub.venue || "";
+    // Backward-compatible: prefer `venue`, fall back to old `venueFull`.
+    const venue = pub.venue || pub.venueFull || "";
 
     // Authors list (if present, renders a dedicated line)
     const authorsLine = Array.isArray(pub.authors) && pub.authors.length > 0
       ? `<p class="pub-authors">${pub.authors.map(escapeHTML).join(", ")}</p>`
       : "";
 
-    const doiBlock = pub.doiUrl
-      ? `<span class="pub-doi">${escapeHTML(pub.doiLabel || "DOI")}:
-           <a href="${pub.doiUrl}" target="_blank" rel="noopener noreferrer">${escapeHTML(pub.doiText || pub.doiUrl)}</a>
-         </span>`
-      : (pub.doiText
-          ? `<span class="pub-doi">${escapeHTML(pub.doiLabel || "DOI")}: ${escapeHTML(pub.doiText)}</span>`
-          : "");
+    // Single primary action, shown at the bottom of the card:
+    //   - if an external link exists  → open that page (DOI / CEUR-WS / SSRN / IRIS…)
+    //   - otherwise                   → download the local PDF
+    //   - if neither                  → muted "TBA"
+    // The raw URL is never printed in the card, only a labelled button.
+    const pdfExternal = /^https?:\/\//i.test(pub.pdf || "");
+    let primaryAction;
+    if (pub.link && pub.link.url) {
+      primaryAction = `<a href="${pub.link.url}" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> ${escapeHTML(pub.link.label || "View paper")}
+        </a>`;
+    } else if (pub.pdf) {
+      primaryAction = `<a href="${pub.pdf}" ${pdfExternal ? 'target="_blank" rel="noopener noreferrer"' : ""}>
+          <i class="fa-solid fa-file-pdf"></i> Download PDF
+        </a>`;
+    } else {
+      primaryAction = `<span class="pub-doi">TBA</span>`;
+    }
 
-    const pdfLink = pub.pdfUrl
-      ? `<a href="${pub.pdfUrl}" ${pub.pdfExternal ? 'target="_blank" rel="noopener noreferrer"' : ""}>
-           <i class="fa-solid fa-file-pdf"></i> Download PDF
-         </a>`
+    // Abstract is optional: only render the toggle + panel when present.
+    const abstractButton = pub.abstract
+      ? `<button type="button" class="toggle-btn" data-target="${absId}">Show abstract</button>`
       : "";
-
-    const pageLink = pub.pageUrl
-      ? `<a href="${pub.pageUrl}">
-           <i class="fa-solid fa-file-lines"></i> Paper page
-         </a>`
+    const abstractPanel = pub.abstract
+      ? `<div id="${absId}" class="pub-panel" hidden>
+           <p class="pub-abstract">${escapeHTML(pub.abstract)}</p>
+         </div>`
       : "";
-
-    const links = [pageLink, pdfLink].filter(Boolean).join('<span class="pub-sep">·</span>');
 
     return `
       <li class="publication">
@@ -76,25 +83,20 @@
 
         ${authorsLine}
 
-        <p class="pub-meta">
-          ${escapeHTML(venue)}.
-          ${doiBlock}
-        </p>
+        <p class="pub-meta">${escapeHTML(venue)}.</p>
 
         <div class="pub-actions">
-          <button type="button" class="toggle-btn" data-target="${absId}">Show abstract</button>
+          ${abstractButton}
           <button type="button" class="toggle-btn" data-target="${bibId}">Show BibTeX</button>
         </div>
 
-        <div id="${absId}" class="pub-panel" hidden>
-          <p class="pub-abstract">${escapeHTML(pub.abstract)}</p>
-        </div>
+        ${abstractPanel}
 
         <div id="${bibId}" class="pub-panel" hidden>
           <pre class="pub-bibtex">${escapeHTML(pub.bibtex)}</pre>
         </div>
 
-        ${links ? `<p class="pub-links">${links}</p>` : ""}
+        <p class="pub-links">${primaryAction}</p>
       </li>
     `;
   }
