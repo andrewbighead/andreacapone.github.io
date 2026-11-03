@@ -1,10 +1,10 @@
 [
-  {
-    "title": "Towards Neurosymbolic AI for Risk Assessment of Bradyseism",
-    "period": "2024 – 2028",
-    "description": "As part of my PhD research, I am working on the project <em>\"Towards Neurosymbolic AI for Risk Assessment in Geological Hazards\"</em>, which focuses on predicting seismic events associated with <strong>bradyseism</strong> in the <strong>Campi Flegrei</strong> area of Naples. In collaboration with the <strong>Italian National Institute of Geophysics and Volcanology (INGV)</strong>, I am analyzing ground deformation data from GNSS stations and progressively integrating additional risk factors such as <strong>sinkholes</strong> and <strong>landslides</strong>. My research aims to advance <strong>Explainable AI (XAI)</strong> methodologies, combining multimodal data analysis with <strong>neurosymbolic approaches</strong> to extract formal rules that capture underlying geophysical dynamics and support <strong>risk assessment</strong> and <strong>disaster response planning</strong>.",
-    "tech": "AI Modeling, Explainable AI, Multimodal Data Integration, Neuro-Symbolic Methods."
-  },
+{
+  "title": "Towards Neurosymbolic AI for Risk Assessment in Geological Hazards",
+  "period": "2024 – 2028",
+  "description": "My PhD project studies how AI can reason over <strong>incomplete and uncertain information</strong>, from raw data to decision, for monitoring <strong>bradyseism</strong> at <strong>Campi Flegrei</strong> (Naples). In collaboration with the <strong>INGV – Osservatorio Vesuviano</strong>, I develop processing pipelines that separate the deformation signal from noise in <strong>GNSS</strong> time series, and models that <strong>forecast ground deformation</strong>. On the symbolic side, I design <strong>intuitionistic temporal and strategic logics</strong> (ICTL, IATL) that capture how knowledge is progressively refined, and a tool that turns natural-language scenarios into verifiable formal models. The same <strong>neurosymbolic</strong> framework is extended to connected hazards such as <strong>landslides</strong>.",
+  "tech": "GNSS Signal Processing, Time Series Forecasting, Temporal and Strategic Reasoning, Model Checking, Neurosymbolic AI."
+},
   {
     "title": "APLAND – AI for Landslide Susceptibility Mapping",
     "period": "2025 – 2026",
