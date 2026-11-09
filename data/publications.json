@@ -37,14 +37,14 @@
         "Aniello Murano"
       ],
       "year": "2026",
-      "venue": "CILC 2026 • Workshop",
+      "venue": "CILC 2026 • Conference",
       "link": {
         "label": "CEUR-WS",
         "url": "https://ceur-ws.org/Vol-4244/paper7.pdf"
       },
       "pdf": "papers/GameL_paper.pdf",
       "abstract": "Energy dependence on fossil fuels represents one of the most critical vulnerabilities of modern societies, exposing them to persistent instability and precarious supply conditions, as geopolitical crises have demonstrated. Italy exemplifies this vulnerability, as the vast majority of its energy consumption relies on fossil fuel imports. Efficient, competitive, and sovereign alternatives are therefore increasingly urgent. Fortunately renewable sources are today generating a growing and geographically distributed supply of clean energy. If properly orchestrated this diversified grid can mitigate, and ultimately resolve, the dependence created by fossil fuel imports. This paper presents GameL, an ongoing research project proposing an intelligent decision-support platform for energy communities, built on Agentic Neuro-Symbolic Artificial Intelligence. GameL aims to foster energy independence by reducing reliance on external supply and empowering users who both produce and consume energy (prosumers) to actively govern their own energy flows. To this end, each energy asset in the community is modeled as a proactive agent negotiating energy flows in real time through explainable, formally reasoned decisions. The system is designed to be resilient, instantly redirecting surplus energy toward those who need it, and efficient, anticipating demand to minimize dispersion.",
-      "bibtex": "@article{ambrosino2026gamel, \ntitle={GameL: a Neuro-Symbolic Agentic Architecture Toward Autonomous and Resilient Energy Communities}, \nauthor={Ambrosino, Erica and Andreotti, Amedeo and Aruta, Marco and Ballot, Gabriel and Capone, Andrea and di Vastogirardi, Giulio de Notaristefani and Ferrigno, Sara and Improta, Francesco and Listone, Ciro and Malvone, Vadim and others},\nyear={2026}\n}"
+      "bibtex": "@inproceedings{ambrosino2026gamel,\n  author    = {Ambrosino, Erica and Andreotti, Amedeo and Aruta, Marco and\n               Ballot, Gabriel and Capone, Andrea and\n               de Notaristefani di Vastogirardi, Giulio and Ferrigno, Sara and\n               Improta, Francesco and Listone, Ciro and Malvone, Vadim and\n               Maubert, Bastien and Nappi, Floriana and Romano, Salvatore and\n               Murano, Aniello},\n  title     = {{GameL}: a Neuro-Symbolic Agentic Architecture Toward Autonomous\n               and Resilient Energy Communities},\n  booktitle = {Proceedings of the 41st Italian Conference on Computational\n               Logic (CILC 2026)},\n  year      = {2026},\n  address   = {Ferrara, Italy},\n  publisher = {CEUR-WS.org},\n  series    = {CEUR Workshop Proceedings},\n  volume    = {4244},\n  url       = {https://ceur-ws.org/Vol-4244/paper7.pdf}\n}"
     },
     {
       "id": "iatl-neurosymbolic-2026",
