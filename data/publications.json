@@ -18,7 +18,7 @@
     },
     {
       "id": "gamel-neurosymbolic-2026",
-      "type": "workshop",
+      "type": "conference",
       "title": "GameL: a Neuro-Symbolic Agentic Architecture Toward Autonomous and Resilient Energy Communities",
       "authors": [
         "Erica Ambrosino",
@@ -48,11 +48,11 @@
     },
     {
       "id": "iatl-neurosymbolic-2026",
-      "type": "workshop",
+      "type": "conference",
       "title": "A Neurosymbolic Approach for Landslide Risk Assessment",
       "authors": ["Andrea Capone", "Aniello Murano"],
       "year": "2026",
-      "venue": "ITAL-IA 2026 • Workshop",
+      "venue": "ITAL-IA 2026 • Conference",
       "link": null,
       "pdf": "papers/Ital_IA2026_Neurosymbolic.pdf",
       "abstract": "Landslide risk assessment remains a critical challenge, where current predictive models are still far from providing sufficiently reliable support for high-impact decisions affecting people, infrastructure, and territory. In this work, we propose a neurosymbolic architecture for landslide risk assessment that combines two neural pipelines: one for high-resolution spatial susceptibility mapping and one for ground deformation forecasting from InSAR time series, with a symbolic layer of strategic reasoning based on Intuitionistic Alternating-time Temporal Logic (IATL). IATL is well suited to this scenario because it models the progressive refinement of information and distinguishes between what is not yet proved and what is known to be false. Through an illustrative example, we show how the symbolic layer can extend the neural component in two ways: by supporting decisions in poorly represented scenarios and by filtering physically implausible outputs. The result is a decision-support framework in which predictions are complemented by formally checkable strategic properties and inspectable reasoning traces.",
@@ -95,7 +95,7 @@
       },
       "pdf": "papers/Temporal_Analysis.pdf",
       "abstract": "Reliable forecasting of slow-moving landslide deformation remains challenging due to non-stationarity, noise, missing observations (gaps), and the cumulative nature of satellite-based displacement products. In this study, the time axis is defined on a fixed 12-day cadence, so the one-step forecast corresponds to a consistent 12-day horizon. Raw cumulative sequences are transformed into robust learning inputs through point-wise normalization using statistics computed exclusively from the training interval, local linear detrending, slope-encoded auxiliary channels, and outlier suppression. A hybrid model combining multi-scale convolutional filters, stacked Bidirectional LSTM layers, and a self-attention block is trained in an incremental next-step formulation, reducing drift accumulation while enabling short-term deformation forecasting. Evaluation on a strictly held-out temporal interval demonstrates stable generalization across heterogeneous kinematic regimes. Gradient-based attribution indicates that the network primarily relies on recent temporal states, yielding physically interpretable relevance patterns. Overall, the proposed framework provides a reproducible baseline for large-scale ground-motion forecasting and supports early evolution tracking of slow-moving landslide processes.",
-      "bibtex": "@article{capone2026landslide,\n  title   = {Machine Learning and Explainable Deep Learning for Forecasting Landslide Deformation using EGMS Time Series},\n  author  = {Capone, Andrea and Madadi, Sadegh and Srinivasareddy, Shilpa and Di Martire, Diego and Murano, Aniello},\n  journal = {Available at SSRN 6380938},\n  year    = {2026}\n}"
+      "bibtex": "@misc{madadi2026landslide,\n  author       = {Madadi, Sadegh and Capone, Andrea and Srinivasareddy, Shilpa and\n                  Di Martire, Diego and Murano, Aniello},\n  title        = {Machine Learning and Explainable Deep Learning for Forecasting\n                  Landslide Deformation using {EGMS} Time Series},\n  year         = {2026},\n  howpublished = {SSRN preprint 6380938},\n  doi          = {10.2139/ssrn.6380938},\n  url          = {https://ssrn.com/abstract=6380938}\n}"
     },
     {
       "id": "iatl-kr-2025",
@@ -131,7 +131,7 @@
       },
       "pdf": "papers/ICTL_EUMAS_Camera_Ready.pdf",
       "abstract": "Model checking plays a central role in the formal verification of dynamic systems. However, classical temporal logics such as CTL assume a complete and absolute perspective on truth, which limits their expressiveness in contexts where partial information and constructivity are essential. In this paper, we propose Intuitionistic Computation Tree Logic (ICTL), a novel temporal logic that integrates the semantics of CTL with the constructive principles of intuitionistic logic. ICTL adopts a birelational semantic framework which models the interaction between temporal evolution and the growth of knowledge over time. We formally define the syntax and semantics of ICTL, analyze its foundational properties, and show that key fixed-point characterizations of classical CTL hold in this setting. We then present an efficient model checking algorithm for the novel logic, maintaining the same PTIME complexity of classical CTL. ICTL is particularly well-suited for verifying properties in systems where traceability, information growth, and constructive reasoning are crucial, such as medical monitoring, geophysical data analysis, and database auditing. We validate our theoretical contributions through the extension of VITAMIN, a verification tool for Multi-Agent Systems, to support ICTL. Benchmarks confirm the practical tractability of ICTL model checking, reinforcing its potential for constructive temporal verification in real-world settings.",
-      "bibtex": "@inproceedings{bozzelli2025ictl,\n  title     = {An Intuitionistic Version of Computation Tree Logic},\n  author    = {Bozzelli, Laura and Capone, Andrea and Catta, Davide and Malvone, Vadim and Murano, Aniello},\n  booktitle = {Proceedings of the European Conference on Multi-Agent Systems (EUMAS 2025)},\n  year      = {2025}\n}"
+      "bibtex": "@inproceedings{bozzelli2025ictl,\n  author    = {Bozzelli, Laura and Capone, Andrea and Catta, Davide and\n               Malvone, Vadim and Murano, Aniello},\n  title     = {An Intuitionistic Version of Computation Tree Logic},\n  booktitle = {Multi-Agent Systems -- 22nd European Conference, {EUMAS} 2025,\n               Bucharest, Romania, September 3--5, 2025, Proceedings, Part {I}},\n  editor    = {Baldoni, Matteo and Kl{\\\"u}gl, Franziska and Olaru, Andrei and\n               Sorici, Alexandru and Florea, Adina Magda},\n  series    = {Lecture Notes in Computer Science},\n  volume    = {16258},\n  pages     = {195--211},\n  publisher = {Springer},\n  address   = {Cham},\n  year      = {2026},\n  doi       = {10.1007/978-3-032-22817-8_12}\n}"
     }
   ],
   "theses": [
