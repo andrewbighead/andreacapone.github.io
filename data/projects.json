@@ -1,10 +1,10 @@
 [
-{
-  "title": "Towards Neurosymbolic AI for Risk Assessment in Geological Hazards",
-  "period": "2024 – 2028",
-  "description": "My PhD project studies how AI can reason over <strong>incomplete and uncertain information</strong>, from raw data to decision, for monitoring <strong>bradyseism</strong> at <strong>Campi Flegrei</strong> (Naples). In collaboration with the <strong>INGV – Osservatorio Vesuviano</strong>, I develop processing pipelines that separate the deformation signal from noise in <strong>GNSS</strong> time series, and models that <strong>forecast ground deformation</strong>. On the symbolic side, I design <strong>intuitionistic temporal and strategic logics</strong> (ICTL, IATL) that capture how knowledge is progressively refined, and a tool that turns natural-language scenarios into verifiable formal models. The same <strong>neurosymbolic</strong> framework is extended to connected hazards such as <strong>landslides</strong>.",
-  "tech": "GNSS Signal Processing, Time Series Forecasting, Temporal and Strategic Reasoning, Model Checking, Neurosymbolic AI."
-},
+  {
+    "title": "Towards Neurosymbolic AI for Risk Assessment in Geological Hazards",
+    "period": "2024 – 2028",
+    "description": "The project investigates how artificial intelligence can support reasoning under <strong>incomplete and uncertain information</strong> in volcanic monitoring, taking <strong>bradyseism</strong> at <strong>Campi Flegrei</strong> (Naples) as its main case study. It is organized along three complementary lines of research.</p><p><strong>Data science.</strong> Carried out in collaboration with <strong>Prof. Angelo Ciaramella</strong> (DIST, University of Naples Parthenope) and <strong>INGV – Osservatorio Vesuviano</strong>, this line provides an in-depth characterization of the <strong>GNSS</strong> deformation signal: its structure, its temporal behaviour and its components, from the bradyseismic trend to the irreducible noise. Building on this analysis, it defines an end-to-end processing pipeline that compares the available positioning solutions to assess their reliability, separates the deformation signal from spurious components, and characterizes the residual noise. The resulting time series are employed for <strong>ground deformation forecasting</strong>, with particular emphasis on uncertainty quantification and model interpretability. A central objective is to assess whether hourly solutions, which are considerably noisier, can attain a quality at least comparable to that of daily solutions, thereby enabling more frequent assessments than those currently provided by the weekly bulletins.</p><p><strong>Logic.</strong> This line introduces <strong>intuitionistic temporal and strategic logics</strong> (ICTL, IATL), which capture the progressive refinement of knowledge, together with their model checking within VITAMIN. These formalisms allow the <strong>monitoring system itself to be modelled as a multi-agent system</strong>, describing how stations, reference stations and processing components behave under varying environmental conditions (signal degradation, missing references, seismic swarms), and enabling the formal verification of its properties.</p><p><strong>Generative models.</strong> This line addresses the automatic translation of natural-language scenario descriptions into <strong>verifiable formal models</strong>, allowing scenarios expressed in natural language to be formally verified.</p><p>Data analysis and formal reasoning thus provide two complementary perspectives: the former extracts reliable information on ground deformation, while the latter verifies the behaviour of the monitoring system. Together, they define a <strong>neurosymbolic</strong> framework for volcanic monitoring, which is further extended to cascading hazards such as <strong>landslides</strong>.",
+    "tech": "GNSS Signal Analysis, Time Series Forecasting, Uncertainty Quantification, Explainable AI, Temporal and Strategic Reasoning, Model Checking, Generative Models, Neurosymbolic AI."
+  },
   {
     "title": "APLAND – AI for Landslide Susceptibility Mapping",
     "period": "2025 – 2026",
@@ -14,8 +14,8 @@
   {
     "title": "VITAMIN – Model Checker",
     "period": "2024 – Ongoing",
-    "description": "Working with the ASTREA research team, I am involved in the engineering and development of VITAMIN, a model checker designed for verifying complex systems. My focus is on optimizing the processing of input data, refactoring and testing the code, and enhancing readability. I have also implemented model checking for two new formalisms: Intuitionistic CTL and Intuitionistic ATL.",
-    "tech": "Python, Pandas, NumPy."
+    "description": "Working with the ASTREA research team, I am involved in the engineering and development of VITAMIN, a model checker designed for verifying complex systems. My focus is on optimizing the processing of input data, refactoring and testing the code, and enhancing readability. I have also implemented model checking for two new formalisms: Intuitionistic CTL and Intuitionistic ATL. As part of my research visit at Télécom Paris, I am developing generative models for the automatic construction of formal models from natural-language scenario descriptions, which will be integrated into VITAMIN. Future developments include the extension of the tool to further logics, namely a generalization of ICTL and IATL and a fuzzy variant of IATL.",
+    "tech": "Python, Pandas, NumPy, Generative Models."
   },
   {
     "title": "Food Talk",

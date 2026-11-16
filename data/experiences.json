@@ -1,8 +1,13 @@
 [
   {
-    "title": "Apple Developer Academy at Apple@UniNa",
-    "period": "September 2019 – July 2020",
-    "description": "The Apple Developer Academy is a partnership between the University of Napoli Federico II and Apple. Training at the Academy is aimed at developing apps for the world's most innovative and vibrant app ecosystem. The program focuses on software development, startup creation and app design with an emphasis on creativity and collaboration. During the Academy I developed design skills with tools such as Figma and Sketch and learned how to code in the Swift programming language. I also improved my English skills."
+    "title": "Visiting PhD Student at Télécom Paris",
+    "period": "2026 – 2027",
+    "description": "Six-month research visit at the LTCI laboratory, Institut Polytechnique de Paris (Palaiseau), under the supervision of Prof. Vadim Malvone. The research activity concerns generative models for the automatic translation of natural-language scenario descriptions into verifiable formal models, to be integrated into the VITAMIN model checker."
+  },
+  {
+    "title": "Python Developer at Maipek Srl",
+    "period": "May 2023 – November 2023",
+    "description": "At Maipek Srl, I was involved in the development of software for an intra-oral scanner. My work focused on exploring concepts of photogrammetry, image processing, triangulation, and point cloud construction. Technologies used include Python, with frameworks such as OpenCV, CuPy, and TorchVision."
   },
   {
     "title": "Agritech Academy at Agritech Center@UniNa",
@@ -10,8 +15,8 @@
     "description": "Agritech Academy is a high-level training course where participants learn how technology is used in the agricultural domain. During the course, I developed skills in Dart, Flutter, and QGIS while working on a project that integrated innovative tech solutions with agricultural challenges."
   },
   {
-    "title": "Python Developer at Maipek Srl",
-    "period": "May 2023 – November 2023",
-    "description": "At Maipek Srl, I was involved in the development of software for an intra-oral scanner. My work focused on exploring concepts of photogrammetry, image processing, triangulation, and point cloud construction. Technologies used include Python, with frameworks such as OpenCV, CuPy, and TorchVision."
+    "title": "Apple Developer Academy at Apple@UniNa",
+    "period": "September 2019 – July 2020",
+    "description": "The Apple Developer Academy is a partnership between the University of Napoli Federico II and Apple. Training at the Academy is aimed at developing apps for the world's most innovative and vibrant app ecosystem. The program focuses on software development, startup creation and app design with an emphasis on creativity and collaboration. During the Academy I developed design skills with tools such as Figma and Sketch and learned how to code in the Swift programming language. I also improved my English skills."
   }
 ]
