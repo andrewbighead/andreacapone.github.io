@@ -9,36 +9,36 @@
     "title": "APLAND – AI for Landslide Susceptibility Mapping",
     "period": "2025 – 2026",
     "description": "APLAND is an applied research initiative focused on developing AI-driven tools for <strong>landslide susceptibility assessment</strong>. In collaboration with <strong>BIDATA</strong>, I contributed to the modelling pipeline by designing and implementing a data-driven workflow based on the <strong>Frequency Ratio (FR)</strong> method for generating susceptibility maps. The project integrates geospatial data, environmental conditioning factors, and machine-learning components to support risk analysis and decision-making for territorial monitoring and civil protection.",
-    "tech": "AI Modeling, Explainable AI, Geospatial Data Analysis, Frequency Ratio Method, Multimodal Data Integration, Neuro-Symbolic Methods, FastAPI, Geoserver, Rasterio, Streamlit."
+    "tech": "AI Modeling, Explainable AI, Geospatial Data Analysis, Frequency Ratio Method, Multimodal Data Integration, Neurosymbolic Methods, FastAPI, GeoServer, Rasterio, Streamlit."
   },
   {
     "title": "VITAMIN – Model Checker",
     "period": "2024 – Ongoing",
-    "description": "Working with the ASTREA research team, I am involved in the engineering and development of VITAMIN, a model checker designed for verifying complex systems. My focus is on optimizing the processing of input data, refactoring and testing the code, and enhancing readability. I have also implemented model checking for two new formalisms: Intuitionistic CTL and Intuitionistic ATL. As part of my research visit at Télécom Paris, I am developing generative models for the automatic construction of formal models from natural-language scenario descriptions, which will be integrated into VITAMIN. Future developments include the extension of the tool to further logics, namely a generalization of ICTL and IATL and a fuzzy variant of IATL.",
+    "description": "Within the ASTREA research group, I contribute to the design and development of VITAMIN, a model checker for the verification of multi-agent systems. My contributions concern the optimization of input processing, code refactoring and testing, and the implementation of model checking for two new formalisms: Intuitionistic CTL and Intuitionistic ATL. As part of my research visit at Télécom Paris, I am developing generative models for the automatic construction of formal models from natural-language scenario descriptions, which will be integrated into VITAMIN. Future developments include the extension of the tool to further logics, namely a generalization of ICTL and IATL and a fuzzy variant of IATL.",
     "tech": "Python, Pandas, NumPy, Generative Models."
   },
   {
     "title": "Food Talk",
     "period": "2023 – Ongoing",
-    "description": "As part of the Agritech Academy, I collaborated with a team to develop an application designed to optimize the traceability of fresh produce from production to consumption. The system streamlines the supply chain, offering real-time insights to improve quality control and enhance market transparency.",
+    "description": "Developed within the Agritech Academy, Food Talk is an application for the traceability of fresh produce along the supply chain, from production to consumption, providing real-time information to support quality control and market transparency.",
     "tech": "Mobile and Web Development, Data Integration, Process Optimization."
   },
   {
     "title": "Wine – Digital Sommelier Assistant",
     "period": "2025 – Ongoing",
-    "description": "Wine is a mobile application designed for sommeliers to digitally compile tasting sheets for the Italian Association of Sommeliers. The collected data is then used by a recommendation system to suggest the ideal wine for various occasions.",
+    "description": "Wine is a mobile application that allows sommeliers to compile the tasting sheets of the Italian Sommelier Association (AIS) digitally. The collected data feed a recommendation system that suggests suitable wines for different occasions.",
     "tech": "Mobile App Development, Data-Driven Recommendation Systems."
   },
   {
     "title": "Medical Survey",
     "period": "2025",
-    "description": "Medical Survey is a web polling application that enables conference attendees to respond to questions in real time, with immediate display of results. Currently deployed in scientific medical conferences, this tool significantly enhances audience engagement and feedback collection.",
+    "description": "Medical Survey is a web application for real-time audience polling, with immediate visualization of results. It is currently used at scientific medical conferences to support audience engagement and feedback collection.",
     "tech": "HTML, CSS, JavaScript, Firebase, Cloud Computing."
   },
   {
     "title": "Theatrical Digital Archive – Certosa di San Martino, Naples",
     "period": "2019 – 2020",
-    "description": "During my Bachelor's degree in Computer Science, I developed an application tailored to the conservation and exhibition needs of the \"Fondo Niccolini\" – a collection of over 900 artworks. By digitizing and systematically archiving these works, museum visitors can explore the collection through thematic classification and a tree-structured exploration of various topics.",
+    "description": "Developed during my Bachelor's degree in Computer Science, this application supports the conservation and exhibition of the \"Fondo Niccolini\", a collection of over 900 artworks. The works are digitized and systematically archived, allowing visitors to explore the collection through thematic classification and a tree-structured navigation of topics.",
     "tech": "Java, Usability Testing, REST APIs, HTML, CSS, JavaScript, Neo4J, Cypher Query Language."
   }
 ]

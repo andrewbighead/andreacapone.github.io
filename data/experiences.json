@@ -7,16 +7,16 @@
   {
     "title": "Python Developer at Maipek Srl",
     "period": "May 2023 – November 2023",
-    "description": "At Maipek Srl, I was involved in the development of software for an intra-oral scanner. My work focused on exploring concepts of photogrammetry, image processing, triangulation, and point cloud construction. Technologies used include Python, with frameworks such as OpenCV, CuPy, and TorchVision."
+    "description": "I contributed to the development of software for an intra-oral scanner, working on photogrammetry, image processing, triangulation and point cloud reconstruction, using Python with OpenCV, CuPy and TorchVision."
   },
   {
     "title": "Agritech Academy at Agritech Center@UniNa",
     "period": "April 2023 – November 2023",
-    "description": "Agritech Academy is a high-level training course where participants learn how technology is used in the agricultural domain. During the course, I developed skills in Dart, Flutter, and QGIS while working on a project that integrated innovative tech solutions with agricultural challenges."
+    "description": "The Agritech Academy is an advanced training programme on the application of digital technologies to agriculture. During the programme, I acquired skills in Dart, Flutter and QGIS while developing a project that addresses agricultural challenges through technological solutions."
   },
   {
     "title": "Apple Developer Academy at Apple@UniNa",
     "period": "September 2019 – July 2020",
-    "description": "The Apple Developer Academy is a partnership between the University of Napoli Federico II and Apple. Training at the Academy is aimed at developing apps for the world's most innovative and vibrant app ecosystem. The program focuses on software development, startup creation and app design with an emphasis on creativity and collaboration. During the Academy I developed design skills with tools such as Figma and Sketch and learned how to code in the Swift programming language. I also improved my English skills."
+    "description": "The Apple Developer Academy is a training programme run by the University of Naples Federico II in partnership with Apple, focused on software development, app design and startup creation. During the programme, I acquired design skills with tools such as Figma and Sketch and learned the Swift programming language."
   }
 ]
