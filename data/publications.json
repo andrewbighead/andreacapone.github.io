@@ -78,8 +78,8 @@
     },
     {
       "id": "landslide-forecasting-2026",
-      "type": "journal-preprint",
-      "title": "Machine Learning and Explainable Deep Learning for Forecasting Landslide Deformation using EGMS Time Series",
+      "type": "journal",
+      "title": "Machine Learning and Explainable Deep Learning for Forecasting Ground Deformation in a Landslide-Prone EGMS Corridor",
       "authors": [
         "Sadegh Madadi",
         "Andrea Capone",
@@ -88,14 +88,14 @@
         "Aniello Murano"
       ],
       "year": "2026",
-      "venue": "Applied Soft Computing • Preprint",
+      "venue": "Applied Soft Computing • Journal",
       "link": {
-        "label": "SSRN",
-        "url": "https://dx.doi.org/10.2139/ssrn.6380938"
+        "label": "ScienceDirect",
+        "url": "https://doi.org/10.1016/j.asoc.2026.116931"
       },
-      "pdf": "papers/Temporal_Analysis.pdf",
-      "abstract": "Reliable forecasting of slow-moving landslide deformation remains challenging due to non-stationarity, noise, missing observations (gaps), and the cumulative nature of satellite-based displacement products. In this study, the time axis is defined on a fixed 12-day cadence, so the one-step forecast corresponds to a consistent 12-day horizon. Raw cumulative sequences are transformed into robust learning inputs through point-wise normalization using statistics computed exclusively from the training interval, local linear detrending, slope-encoded auxiliary channels, and outlier suppression. A hybrid model combining multi-scale convolutional filters, stacked Bidirectional LSTM layers, and a self-attention block is trained in an incremental next-step formulation, reducing drift accumulation while enabling short-term deformation forecasting. Evaluation on a strictly held-out temporal interval demonstrates stable generalization across heterogeneous kinematic regimes. Gradient-based attribution indicates that the network primarily relies on recent temporal states, yielding physically interpretable relevance patterns. Overall, the proposed framework provides a reproducible baseline for large-scale ground-motion forecasting and supports early evolution tracking of slow-moving landslide processes.",
-      "bibtex": "@misc{madadi2026landslide,\n  author       = {Madadi, Sadegh and Capone, Andrea and Srinivasareddy, Shilpa and\n                  Di Martire, Diego and Murano, Aniello},\n  title        = {Machine Learning and Explainable Deep Learning for Forecasting\n                  Landslide Deformation using {EGMS} Time Series},\n  year         = {2026},\n  howpublished = {SSRN preprint 6380938},\n  doi          = {10.2139/ssrn.6380938},\n  url          = {https://ssrn.com/abstract=6380938}\n}"
+      "pdf": null,
+      "abstract": "Reliable forecasting of regional ground deformation remains challenging because satellite displacement time series are non-stationary, noisy, and cumulative. The raw European Ground Motion Service (EGMS) record comprises 239 acquisitions with mixed 6-, 12-, and 24-day intervals. We therefore construct a fixed 12-day grid of 152 epochs, of which 150 are directly observed, while two missing epochs are handled causally during input construction. Comparison with the available Basilicata landslide inventory shows that 11,325 of 594,978 EGMS points (approximately 1.9%) fall within mapped landslide polygons; the task is consequently framed as corridor-scale ground-deformation forecasting in a landslide-prone region. Inputs are prepared using training-only point-wise normalization, local linear detrending, slope encoding, and outlier suppression. A hybrid multi-scale CNN–BiLSTM–Attention model is trained to predict next-step displacement increments, reducing drift accumulation. Evaluation on 200,000 temporally held-out test windows yields MAE = 3.024 ± 0.011 mm, RMSE = 4.392 ± 0.015 mm, R²(Δ) = 0.595 ± 0.025, and R²(level) = 0.920 ± 0.002. The proposed model outperforms eight directly comparable statistical and machine-learning baselines evaluated under the same protocol. ARIMA is reported separately because it follows a distinct 500-point walk-forward design. Ablation experiments identify increment-based prediction and attention as the most influential components, while Integrated Gradients reveal recency-dominant temporal attribution. The framework provides a reproducible baseline for short-term regional ground-deformation forecasting in landslide-prone EGMS corridors.",
+      "bibtex": "@article{madadi2026landslide,\n  author  = {Madadi, Sadegh and Capone, Andrea and Srinivasareddy, Shilpa and\n             Di Martire, Diego and Murano, Aniello},\n  title   = {Machine Learning and Explainable Deep Learning for Forecasting\n             Ground Deformation in a Landslide-Prone {EGMS} Corridor},\n  journal = {Applied Soft Computing},\n  pages   = {116931},\n  year    = {2026},\n  issn    = {1568-4946},\n  doi     = {10.1016/j.asoc.2026.116931},\n  url     = {https://www.sciencedirect.com/science/article/pii/S1568494626023793}\n}"
     },
     {
       "id": "iatl-kr-2025",
